@@ -14,9 +14,9 @@
 
 <div dir="rtl" align="center">
 
-![Version](https://img.shields.io/badge/نسخه-1.0.0-8B5CF6?style=flat-square) ![License](https://img.shields.io/badge/مجوز-MIT-22C55E?style=flat-square) ![Browsers](https://img.shields.io/badge/کروم%20%7C%20اج%20%7C%20فایرفاکس-پشتیبانی%20کامل-3B82F6?style=flat-square) ![Telemetry](https://img.shields.io/badge/جمع‌آوری%20داده-صفر-EC4899?style=flat-square) ![Made by](https://img.shields.io/badge/سازنده-100ri.ir-F59E0B?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.0.0-8B5CF6?style=flat-square) ![License](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square) ![Chrome | Edge | Firefox](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6?style=flat-square) ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-0EA5E9?style=flat-square) ![Telemetry](https://img.shields.io/badge/telemetry-zero-EC4899?style=flat-square) ![Made by](https://img.shields.io/badge/made%20by-100ri.ir-F59E0B?style=flat-square)
 
-[![Latest Release](https://img.shields.io/github/v/release/100ri-ir/ProxyFaMega?style=flat-square&label=دانلود)](https://github.com/100ri-ir/ProxyFaMega/releases/latest) [![Stars](https://img.shields.io/github/stars/100ri-ir/ProxyFaMega?style=flat-square)](https://github.com/100ri-ir/ProxyFaMega/stargazers) [![Release Build](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml/badge.svg)](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml)
+[![Latest Release](https://img.shields.io/github/v/release/100ri-ir/ProxyFaMega?style=flat-square&label=release)](https://github.com/100ri-ir/ProxyFaMega/releases/latest) [![Stars](https://img.shields.io/github/stars/100ri-ir/ProxyFaMega?style=flat-square)](https://github.com/100ri-ir/ProxyFaMega/stargazers) [![Release Build](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml/badge.svg)](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml)
 
 **[📥 دانلود از Releases](https://github.com/100ri-ir/ProxyFaMega/releases/latest)** · **[✨ امکانات](#-امکانات)** · **[📥 نصب](#-نصب)** · **[🎬 پیش‌نمایش بدون نصب](#-پیشنمایش-بدون-نصب)** · **[🇬🇧 English](#-proxyfamega-english)**
 
