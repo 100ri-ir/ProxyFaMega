@@ -2,13 +2,13 @@
 
 <img src="assets/banner.png" width="100%" alt="ProxyFaMega — مدیریت پروکسی مرورگر">
 
-# ⚡ پروکسی‌فا مگا
+# ⚡ پروکسی‌فا مگا (ProxyFaMega)
 
-**مدیریت پروکسی مرورگر — فارسی، خوش‌رنگ و حرفه‌ای**
+**مدیریت پروکسی مرورگر — فارسی، زیبا و حرفه‌ای**
 
-افزونه‌ای مدرن با طراحی الهام‌گرفته از iOS برای مدیریت پروفایل‌های پروکسی؛ بازطراحیِ ایرانی‌شده و فارسی‌شدهٔ ایدهٔ [ZeroOmega](https://github.com/zero-peak/ZeroOmega) — با ۱۰ پروفایل آماده (Hiddify، v2rayN، NekoBox، Happ، Clash و…)، سوییچ خودکار هوشمند با پیش‌تنظیمِ **«ایران مستقیم، بقیه با پروکسی»** و ۸ تم رنگی خوشگل.
+افزونه‌ای مدرن با طراحی الهام‌گرفته از iOS برای مدیریت پروفایل‌های پروکسی؛ بازطراحی و بومی‌سازی افزونهٔ [ZeroOmega](https://github.com/zero-peak/ZeroOmega) — شامل ۱۰ پروفایل آماده (Hiddify، v2rayN، NekoBox، Happ، Clash و...)، سوییچ خودکار هوشمند با حالت پیش‌فرض **«سایت‌های ایرانی مستقیم، بقیه با پروکسی»** و ۸ تم رنگی جذاب.
 
-ساخته‌شده با ❤️ و ☕ توسط **[100ri.ir](https://github.com/100ri-ir)** برای کاربران فارسی‌زبان
+توسعه‌یافته با ❤️ و ☕ توسط **[100ri.ir](https://github.com/100ri-ir)** برای کاربران فارسی‌زبان
 
 </div>
 
@@ -18,7 +18,7 @@
 
 [![Latest Release](https://img.shields.io/github/v/release/100ri-ir/ProxyFaMega?style=flat-square&label=release)](https://github.com/100ri-ir/ProxyFaMega/releases/latest) [![Stars](https://img.shields.io/github/stars/100ri-ir/ProxyFaMega?style=flat-square)](https://github.com/100ri-ir/ProxyFaMega/stargazers) [![Release Build](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml/badge.svg)](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml)
 
-**[📥 دانلود از Releases](https://github.com/100ri-ir/ProxyFaMega/releases/latest)** · **[✨ امکانات](#-امکانات)** · **[📥 نصب](#-نصب)** · **[🎬 پیش‌نمایش بدون نصب](#-پیشنمایش-بدون-نصب)** · **[🇬🇧 English](#-proxyfamega-english)**
+**[📥 دانلود آخرین نسخه](https://github.com/100ri-ir/ProxyFaMega/releases/latest)** · **[✨ امکانات](#-امکانات)** · **[📥 آموزش نصب](#-آموزش-نصب)** · **[🎬 پیش‌نمایش بدون نصب](#-مشاهده-پیشنمایش-بدون-نیاز-به-نصب)** · **[🇬🇧 English](#-proxyfamega-english)**
 
 </div>
 
@@ -28,22 +28,22 @@
 
 ## 💡 چرا ProxyFaMega؟
 
-هر ایرانی که با Hiddify یا v2rayN یا نکوباکس کار می‌کند، وسط کارش به یک مشکل خورده: **تغییر سریع پروکسیِ مرورگر**. پروژه‌های قدیمی مثل SwitchyOmega یا جانشینش ZeroOmega عالی‌اند، ولی انگلیسی‌اند، قیافه‌شان دهه‌ای است و برای پروفایل‌های رایج ایرانی هیچ پیش‌فرضی ندارند.
+اکثر کاربرانی که با برنامه‌هایی مانند Hiddify، v2rayN یا NekoBox کار می‌کنند، معمولاً با مشکل تغییر سریع و آسان پروکسی در مرورگر مواجه می‌شوند. افزونه‌های قدیمی‌تر مثل SwitchyOmega یا نسخهٔ جدیدتر آن (ZeroOmega)، با وجود عملکرد عالی، از زبان فارسی پشتیبانی نمی‌کنند، رابط کاربری نسبتاً قدیمی دارند و هیچ‌گونه تنظیمات پیش‌فرضی برای کاربران ایرانی ارائه نمی‌دهند.
 
-ProxyFaMega همان قدرت را با **رابط کاملاً فارسی، راست‌به‌چپ و iOS-سبک** می‌آورد؛ با پورت‌های پیش‌فرضِ برنامه‌هایی که همین امروز استفاده می‌کنید، پیش‌تنظیم‌های آمادهٔ ایرانی و جزوه‌ای از توضیح و مثال زیرِ هر تنظیم — طوری که حتی اگر تازه‌کار هم باشید، همه‌چیز را می‌فهمید.
+افزونهٔ **ProxyFaMega** همان کارایی قدرتمند را با یک رابط کاربری کاملاً فارسی، راست‌چین و مدرن در اختیار شما قرار می‌دهد. پشتیبانی از پورت‌های پیش‌فرض برنامه‌های رایج، تنظیمات آماده برای سایت‌های ایرانی، و ارائهٔ توضیحات و مثال‌های واضح برای هر بخش، باعث شده تا حتی کاربران مبتدی نیز بتوانند به‌راحتی و بدون سردرگمی از آن استفاده کنند.
 
 ## ✨ امکانات
 
-- 🇮🇷 **فارسی پیش‌فرض و کامل (راست‌به‌چپ)** + English — با فونت زیبای **[وزیرمتن](https://github.com/rastikerdar/vazirmatn)** و جابه‌جایی زبان در لحظه
-- 🎨 **۸ تم رنگی iOS-سبک** (آورورا، غروب، اقیانوس، نعنایی، آب‌نباتی، طلایی، نیمه‌شب، نئون) + **حالت شب خودکار** هماهنگ با سیستم‌عامل
-- 🚀 **۱۰ پروفایل آماده** با پورت‌های پیش‌فرض — جدول کامل پایین‌تر ⬇️
-- 🔀 **سوییچ خودکار هوشمند** با قوانین دامنه/آدرس/Regex + **تست‌کنندهٔ زندهٔ آدرس** + ۴ پیش‌تنظیم آماده، از جمله **«ایران مستقیم، بقیه با پروکسی»** (همهٔ `*.ir` و سایت‌های معروف ایرانی مثل دیجی‌کالا، آپارات، ترب، وارزش۳ و… مستقیم می‌روند)
-- 💾 **بکاپ حرفه‌ای**: خروجی رمزداری‌شده با AES-256-GCM، اسنپ‌شات خودکار (تا ۱۰ نسخه) و **درون‌ریزی مستقیم از ZeroOmega / SwitchyOmega**
-- 📝 **هر تنظیم با توضیح فارسی و مثال کاربردی** — بدون گیج‌شدن!
-- ⌨️ میان‌بر `Alt+Shift+P` برای پروفایل بعدی، منوی راست‌کلیک روی آیکون، نشان رنگی وضعیت، تست سرعت اتصال
-- 🔒 **ذخیرهٔ خودکار** همهٔ تغییرات + همگام‌سازی اختیاری بین دستگاه‌ها
-- 🕵️ **بدون جمع‌آوری داده** — همه‌چیز فقط روی دستگاه خودتان می‌ماند
-- 🧪 **تست‌های منطقی و PAC** — بیلد بدون تستِ سبز منتشر نمی‌شود
+- 🇮🇷 **پشتیبانی کامل از زبان فارسی (راست‌چین)** و انگلیسی — با فونت زیبای **[وزیرمتن](https://github.com/rastikerdar/vazirmatn)** و قابلیت تغییر زبان در لحظه.
+- 🎨 **۸ تم رنگی مدرن و جذاب** (شفق قطبی، غروب، اقیانوس، نعنایی، آب‌نباتی، طلایی، نیمه‌شب، نئون) + **حالت شب (Dark Mode) خودکار** هماهنگ با سیستم‌عامل.
+- 🚀 **۱۰ پروفایل آماده** با پورت‌های پیش‌فرض برای برنامه‌های رایج (جدول کامل در ادامه ⬇️).
+- 🔀 **سوییچ خودکار هوشمند** با پشتیبانی از قوانین دامنه/آدرس/Regex + **ابزار تست زندهٔ آدرس** + ۴ پیش‌تنظیم آماده، از جمله حالت **«ایران مستقیم، بقیه با پروکسی»** (ترافیک دامنه‌های `ir.` و سایت‌های پرکاربرد ایرانی مانند دیجی‌کالا، آپارات، ترب، ورزش۳ و... به‌صورت مستقیم و بدون پروکسی هدایت می‌شود).
+- 💾 **سیستم پشتیبان‌گیری (Backup) حرفه‌ای**: خروجی رمزنگاری‌شده با استاندارد AES-256-GCM، ذخیرهٔ خودکار تاریخچه (تا ۱۰ نسخه) و **امکان درون‌ریزی (Import) مستقیم از ZeroOmega / SwitchyOmega**.
+- 📝 **توضیحات و مثال‌های کاربردی فارسی** برای تمامی تنظیمات.
+- ⌨️ میان‌بر `Alt+Shift+P` برای جابه‌جایی سریع بین پروفایل‌ها، منوی راست‌کلیک روی آیکون، نشانگر رنگی وضعیت، و ابزار تست سرعت اتصال.
+- 🔒 **ذخیرهٔ خودکار** تمامی تغییرات + قابلیت همگام‌سازی اختیاری بین دستگاه‌های مختلف.
+- 🕵️ **حریم خصوصی کامل** — هیچ‌گونه اطلاعاتی جمع‌آوری نمی‌شود و همه‌چیز فقط روی دستگاه خودتان باقی می‌ماند.
+- 🧪 **پایداری بالا** — پشت‌سرگذاشتن تمامی تست‌های منطقی و PAC پیش از انتشار هر نسخه.
 
 ## 🚀 ۱۰ پروفایل آماده
 
@@ -79,7 +79,7 @@ ProxyFaMega همان قدرت را با **رابط کاملاً فارسی، ر�
 </table>
 
 <details>
-<summary><b>📸 تصاویر بیشتر</b> (تنظیمات، ویرایشگر پروفایل، نسخهٔ انگلیسی و…)</summary>
+<summary><b>📸 تصاویر بیشتر</b> (تنظیمات، ویرایشگر پروفایل، نسخهٔ انگلیسی و...)</summary>
 
 <table>
 <tr><td width="50%"><img src="screenshots/04-settings-fa-light.png" alt="تنظیمات"></td><td width="50%"><img src="screenshots/07-profiles-en-light.png" alt="Profiles — English"></td></tr>
@@ -88,106 +88,110 @@ ProxyFaMega همان قدرت را با **رابط کاملاً فارسی، ر�
 
 </details>
 
-## 📥 نصب
+## 📥 آموزش نصب
 
-### 🟢 کروم / بریو — و 🔵 اج
+### 🟢 مرورگرهای مبتنی بر کرومیوم (Chrome, Edge, Brave)
 
-1. آخرین نسخه را از [**صفحهٔ Releases**](https://github.com/100ri-ir/ProxyFaMega/releases/latest) دانلود کنید: فایل `ProxyFaMega-v1.0.0-chrome.zip` (برای اج همان بسته یا `edge` مناسب است)
-2. فایل ZIP را باز کنید (Extract)
-3. به `chrome://extensions` بروید (در اج: `edge://extensions`)
-4. حالت **Developer mode** را روشن کنید
-5. روی **Load unpacked** کلیک و پوشهٔ حاصل از unzip را انتخاب کنید
+۱. آخرین نسخه را از [**صفحهٔ Releases**](https://github.com/100ri-ir/ProxyFaMega/releases/latest) دانلود کنید: فایل `ProxyFaMega-v1.0.0-chrome.zip` (این فایل برای مرورگر اج نیز مناسب است).
+۲. فایل ZIP دانلودشده را استخراج (Extract) کنید.
+۳. در نوار آدرس مرورگر خود عبارت `chrome://extensions` (و در اج `edge://extensions`) را وارد کنید.
+۴. گزینهٔ **Developer mode** (حالت توسعه‌دهنده) را در گوشهٔ صفحه فعال کنید.
+۵. روی دکمهٔ **Load unpacked** کلیک کرده و پوشهٔ استخراج‌شده را انتخاب کنید.
 
-### 🦊 فایرفاکس
+### 🦊 مرورگر فایرفاکس
 
-1. به `about:debugging#/runtime/this-firefox` بروید
-2. **Load Temporary Add-on…** را بزنید و فایل `manifest.json` داخل بستهٔ `firefox` را انتخاب کنید
+۱. در نوار آدرس مرورگر عبارت `about:debugging#/runtime/this-firefox` را وارد کنید.
+۲. روی **Load Temporary Add-on…** کلیک کنید و فایل `manifest.json` واقع در پوشهٔ `firefox` را انتخاب نمایید.
 
-> 💡 نصب موقت فایرفاکس تا بسته‌شدن مرورگر می‌ماند؛ در نسخه‌های بعدی انتشار از طریق فروشگاه افزونه‌ها هم اضافه می‌شود.
+> 💡 **توجه:** نصب از این طریق در فایرفاکس موقتی بوده و با بستن مرورگر حذف می‌شود. نسخهٔ نهایی افزونه به‌زودی در فروشگاه رسمی افزونه‌های فایرفاکس منتشر خواهد شد.
 
-## ⌨️ میان‌برها
+## ⌨️ کلیدهای میان‌بر
 
-| عمل | کلید |
+| عملکرد | کلید میان‌بر |
 |---|---|
-| پروفایل بعدی | `Alt + Shift + P` |
-| پروفایل قبلی | `Alt + Shift + O` |
+| رفتن به پروفایل بعدی | `Alt + Shift + P` |
+| بازگشت به پروفایل قبلی | `Alt + Shift + O` |
 
-## 🎬 پیش‌نمایش بدون نصب
+## 🎬 مشاهده پیش‌نمایش (بدون نیاز به نصب)
 
-فایل‌های `options/options.html` و `popup/popup.html` را مستقیم در مرورگر باز کنید؛ افزونه در **حالت دمو** با دادهٔ نمونه اجرا می‌شود:
+شما می‌توانید فایل‌های `options/options.html` و `popup/popup.html` را مستقیماً در مرورگر خود باز کنید. در این حالت افزونه در **حالت دمو** و با داده‌های نمونه اجرا می‌شود:
 
-```
+```text
 options/options.html?view=auto&mode=dark&lang=en
 ```
 
-پارامترها: `view` (`dashboard` / `profiles` / `auto` / `settings` / `backup` / `about`)، `mode` (`light` / `dark`)، `lang` (`fa` / `en`)، `theme` (مثل `aurora`، `sunset`، `ocean`، `midnight`…)
+**پارامترهای قابل تغییر:** 
+- `view` (`dashboard` / `profiles` / `auto` / `settings` / `backup` / `about`)
+- `mode` (`light` / `dark`)
+- `lang` (`fa` / `en`)
+- `theme` (مانند `aurora`، `sunset`، `ocean`، `midnight` و...)
 
-## 🛠️ ساخت از سورس
+## 🛠️ بیلد و توسعه از سورس کد
 
 ```bash
 git clone https://github.com/100ri-ir/ProxyFaMega.git
 cd ProxyFaMega
-python3 scripts/build.py     # → dist/ProxyFaMega-v1.0.0-{chrome,firefox,edge}.zip
-node test/logic_test.js      # تست‌های منطق و PAC
-python3 scripts/check_i18n.py # سلامت ترجمه‌ها
+python3 scripts/build.py      # → ایجاد خروجی در مسیر: dist/ProxyFaMega-v1.0.0-{chrome,firefox,edge}.zip
+node test/logic_test.js       # اجرای تست‌های منطق و PAC
+python3 scripts/check_i18n.py # بررسی سلامت و یکپارچگی ترجمه‌ها
 ```
 
-نیازمندی: فقط **پایتون ۳.۶+** و **Node** — بدون هیچ وابستگی خارجی. بسته‌های توزیع هم به‌صورت خودکار در [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) قرار می‌گیرند.
+**پیش‌نیازها:** تنها به **پایتون ۳.۶+** و **Node.js** نیاز دارید و هیچ وابستگی خارجی دیگری وجود ندارد. بسته‌های توزیع نیز به‌صورت خودکار توسط GitHub Actions در بخش [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) قرار می‌گیرند.
 
-## 🔄 مهاجرت از ZeroOmega / SwitchyOmega
+## 🔄 انتقال اطلاعات از ZeroOmega یا SwitchyOmega
 
-صفحهٔ **پشتیبان‌گیری ← بازیابی** → فایل خروجی JSON از ZeroOmega یا SwitchyOmega را رها کنید؛ پروفایل‌ها و قوانین سوییچ خودکار به‌صورت خودکار با پیش‌نمایش و امکان ادغام/جایگزینی منتقل می‌شوند.
+کافیست به بخش **پشتیبان‌گیری ← بازیابی** بروید و فایل خروجی (JSON) گرفته‌شده از ZeroOmega یا SwitchyOmega را در آنجا رها کنید (Drag & Drop). پروفایل‌ها و قوانین سوییچ خودکار شما به همراه پیش‌نمایش، آمادهٔ انتقال (با قابلیت ادغام یا جایگزینی) خواهند بود.
 
 ## 🧩 ساختار پروژه
 
-```
+```text
 ProxyFaMega/
 ├── src/                  ← سورس اصلی افزونه
 │   ├── background/       ← سرویس‌ورکر MV3 (کرومیوم) و موتور پروکسی MV2 (فایرفاکس)
 │   ├── common/           ← ثابت‌ها، تم‌ها، i18n، ذخیره‌سازی، موتور قوانین (matcher/PAC)
 │   ├── popup/            ← پاپ‌آپ تعویض سریع
-│   ├── options/          ← تنظیمات کامل (داشبورد، پروفایل‌ها، سوییچ خودکار، بکاپ…)
+│   ├── options/          ← تنظیمات کامل (داشبورد، پروفایل‌ها، سوییچ خودکار، بکاپ...)
 │   ├── assets/           ← آیکون‌ها + فونت وزیرمتن (۴ وزن)
-│   ├── _locales/         ← پیام‌های بومی‌سازی fa / en
-│   └── manifests/        ← مانیفست‌های chrome / firefox
-├── scripts/              ← build.py ، gen_icons.py ، check_i18n.py
-├── test/                 ← تست‌های منطق و PAC (بدون فریم‌ورک، فقط Node)
-├── screenshots/          ← تصاویر رابط کاربری
-├── assets/               ← بنر و فایل‌های داکیومنت
-└── .github/workflows/    ← بیلد و انتشار خودکار روی تگ
+│   ├── _locales/         ← فایل‌های بومی‌سازی زبان‌ها (fa / en)
+│   └── manifests/        ← مانیفست‌های مرورگرها (chrome / firefox)
+├── scripts/              ← اسکریپت‌های کاربردی: build.py ، gen_icons.py ، check_i18n.py
+├── test/                 ← تست‌های منطق و PAC (اجرا با Node.js)
+├── screenshots/          ← تصاویر پیش‌نمایش رابط کاربری
+├── assets/               ← بنرها و فایل‌های گرافیکی داکیومنت
+└── .github/workflows/    ← تنظیمات بیلد و انتشار خودکار در گیت‌هاب
 ```
 
-## 🗺️ نقشهٔ راه
+## 🗺️ نقشهٔ راه (Roadmap)
 
-- [x] نسخهٔ ۱.۰ — داشبورد، پروفایل‌ها، سوییچ خودکار، بکاپ، ۸ تم، دوزبانه
-- [ ] انتشار در فروشگاه کروم وب و افزونه‌های فایرفاکس
-- [ ] پروفایل‌های آمادهٔ بیشتر + ویرایش گروهی
-- [ ] خروجی/درون‌ریزی قوانین با فرمت‌های رایج (Clash، PAC)
-- [ ] آزمایشگاه تست پروکسی داخل خود افزونه
+- [x] انتشار نسخهٔ ۱.۰ — داشبورد، پروفایل‌ها، سوییچ خودکار، بکاپ، ۸ تم جذاب، دوزبانه
+- [ ] انتشار رسمی در فروشگاه افزونه‌های Chrome Web Store و Firefox Add-ons
+- [ ] اضافه‌کردن پروفایل‌های آمادهٔ بیشتر + قابلیت ویرایش گروهی
+- [ ] امکان خروجی‌گرفتن و درون‌ریزی قوانین با فرمت‌های رایج (نظیر Clash و PAC)
+- [ ] اضافه‌شدن ابزار تست‌کنندهٔ پروکسی درون خود افزونه
 
 ## 🤝 سپاس‌گزاری
 
-این پروژه یک **بازطراحیِ ایرانی‌شده و فارسی‌شده** از ایدهٔ محبوب مدیریت پروکسی مرورگر است و بدون آن‌ها ممکن نبود:
+این پروژه یک **بازطراحی و بومی‌سازی** از ایدهٔ محبوب مدیریت پروکسی مرورگر است که توسعهٔ آن بدون پروژه‌های متن‌باز زیر امکان‌پذیر نبود:
 
-- [**ZeroOmega**](https://github.com/zero-peak/ZeroOmega) — الهام‌بخش اصلیِ این پروژه؛ جانشین مدرن SwitchyOmega
-- [**SwitchyOmega**](https://github.com/FelisCatus/SwitchyOmega) — افزونهٔ کلاسیک و بزرگ مدیریت پروکسی که سال‌ها بر ما زندگی کرد
-- [**وزیرمتن (Vazirmatn)**](https://github.com/rastikerdar/vazirmatn) — فونت زیبای فارسی از [صابر راستی‌کردار](https://github.com/rastikerdar)
+- [**ZeroOmega**](https://github.com/zero-peak/ZeroOmega) — الهام‌بخش اصلی این پروژه و جانشین مدرن SwitchyOmega.
+- [**SwitchyOmega**](https://github.com/FelisCatus/SwitchyOmega) — افزونهٔ کلاسیک و قدرتمند مدیریت پروکسی که سال‌ها مورد استفادهٔ کاربران بود.
+- [**وزیرمتن (Vazirmatn)**](https://github.com/rastikerdar/vazirmatn) — فونت بی‌نظیر و زیبای فارسی، اثر زنده‌یاد [صابر راستی‌کردار](https://github.com/rastikerdar).
 
 ## 👤 سازنده
 
 <div align="right">
 
-این پروژه را **[100ri.ir](https://github.com/100ri-ir)** ساخته و منتشر کرده است — برای ایران، با عشق ❤️
+این پروژه توسط **[100ri.ir](https://github.com/100ri-ir)** با عشق ❤️ توسعه و منتشر شده است.
 
-اگر ProxyFaMega به کارتان آمد، ستاره‌اش را فراموش نکنید ⭐ — چانه‌تان گرم، اینترنت‌تان آزاد!
+اگر ProxyFaMega برای شما مفید بود، لطفاً با دادن ستاره (⭐) در گیت‌هاب از ما حمایت کنید. دمتان گرم و اینترنتتان آزاد!
 
 </div>
 
 ## 📄 مجوز و سلب مسئولیت
 
-**[MIT](LICENSE)** — آزاد برای استفاده، تغییر و انتشار.
+**[MIT](LICENSE)** — این پروژه کاملاً متن‌باز و آزاد برای استفاده، تغییر و انتشار مجدد است.
 
-> ⚠️ این افزونه فقط یک «مدیر پروکسی» است و خودش هیچ سرور یا کانفیگی ارائه نمی‌دهد؛ استفاده از آن برای مصرف شخصی و قانونی است و مسئولیت نحوهٔ استفاده با کاربر است. هیچ داده‌ای جمع نمی‌شود و هیچ چیزی به هیچ سروری ارسال نمی‌شود.
+> ⚠️ **سلب مسئولیت:** این افزونه تنها یک ابزار برای «مدیریت پروکسی» است و هیچ‌گونه سرور یا کانفیگی به همراه ندارد. استفاده از آن برای مصارف شخصی و قانونی است و مسئولیت نحوهٔ استفاده کاملاً بر عهدهٔ کاربر است. این افزونه هیچ داده‌ای را جمع‌آوری نکرده و اطلاعاتی به هیچ سروری ارسال نمی‌کند.
 
 </div>
 
@@ -217,16 +221,16 @@ If you run Hiddify, v2rayN or NekoBox, you know the pain: switching the browser 
 
 ## ✨ Features
 
-- 🇮🇷 **Persian-first, fully RTL** + English — instant language switching, beautiful [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font baked in
-- 🎨 **8 iOS-style color themes** (Aurora, Sunset, Ocean, Mint, Candy, Gold, Midnight, Neon) + **auto dark mode** following the OS
-- 🚀 **10 ready-made profiles** — Hiddify `12334`, v2rayN `10808/10809`, NekoBox `2080`, Happ, Clash `7890`, Shadowsocks `1080`, Tor `9050`, Psiphon `8080`, and more
-- 🔀 **Smart auto-switch** with domain/URL/regex rules, a **live URL tester**, and 4 one-click presets — including **"Iran direct, rest proxied"** (every `*.ir` site plus famous Iranian sites stays direct)
-- 💾 **Professional backup** — AES-256-GCM encrypted exports, automatic snapshots (up to 10), and **direct import from ZeroOmega / SwitchyOmega**
-- 📝 **Every setting documented** with a Persian explanation and a practical example
-- ⌨️ `Alt+Shift+P` / `Alt+Shift+O` shortcuts, context menu, colored status badge, connection latency test
-- 🔒 **Autosave everywhere** + optional cross-device sync
-- 🕵️ **Zero telemetry** — everything stays on your device
-- 🧪 **Logic & PAC test suite** — releases are built only with green tests
+- 🇮🇷 **Persian-first, fully RTL** + English — instant language switching, beautiful [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font baked in.
+- 🎨 **8 iOS-style color themes** (Aurora, Sunset, Ocean, Mint, Candy, Gold, Midnight, Neon) + **auto dark mode** following the OS.
+- 🚀 **10 ready-made profiles** — Hiddify `12334`, v2rayN `10808/10809`, NekoBox `2080`, Happ, Clash `7890`, Shadowsocks `1080`, Tor `9050`, Psiphon `8080`, and more.
+- 🔀 **Smart auto-switch** with domain/URL/regex rules, a **live URL tester**, and 4 one-click presets — including **"Iran direct, rest proxied"** (every `*.ir` site plus famous Iranian sites stays direct).
+- 💾 **Professional backup** — AES-256-GCM encrypted exports, automatic snapshots (up to 10), and **direct import from ZeroOmega / SwitchyOmega**.
+- 📝 **Every setting documented** with a Persian explanation and a practical example.
+- ⌨️ `Alt+Shift+P` / `Alt+Shift+O` shortcuts, context menu, colored status badge, connection latency test.
+- 🔒 **Autosave everywhere** + optional cross-device sync.
+- 🕵️ **Zero telemetry** — everything stays on your device.
+- 🧪 **Logic & PAC test suite** — releases are built only with green tests.
 
 ## 📥 Install
 
@@ -239,7 +243,7 @@ If you run Hiddify, v2rayN or NekoBox, you know the pain: switching the browser 
 
 Open `options/options.html` or `popup/popup.html` directly in any browser — the extension runs in **demo mode** with sample data:
 
-```
+```text
 options/options.html?view=auto&mode=dark&lang=en
 ```
 
@@ -263,9 +267,9 @@ Backup page → Restore → drop the JSON export from ZeroOmega or SwitchyOmega;
 
 ## 🤝 Credits
 
-- [**ZeroOmega**](https://github.com/zero-peak/ZeroOmega) — the main inspiration for this project
-- [**SwitchyOmega**](https://github.com/FelisCatus/SwitchyOmega) — the classic proxy manager
-- [**Vazirmatn**](https://github.com/rastikerdar/vazirmatn) — the beautiful Persian font
+- [**ZeroOmega**](https://github.com/zero-peak/ZeroOmega) — the main inspiration for this project.
+- [**SwitchyOmega**](https://github.com/FelisCatus/SwitchyOmega) — the classic proxy manager.
+- [**Vazirmatn**](https://github.com/rastikerdar/vazirmatn) — the beautiful Persian font.
 
 ## 📄 License
 
