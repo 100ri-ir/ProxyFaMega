@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>ProxyFaMega</title>
+  <link rel="stylesheet" href="../common/ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="pop">
+    <header class="pop-head">
+      <img src="../assets/icons/icon48.png" alt="" class="pop-logo">
+      <div class="pop-title">Proxy<span class="grad-text">FaMega</span></div>
+      <button class="btn-icon" id="btnOptions" title=""></button>
+    </header>
+
+    <section class="hero card" id="heroCard"></section>
+
+    <div class="seg seg-grad" id="modeSeg"></div>
+
+    <div class="search-wrap" id="searchWrap" hidden>
+      <input id="searchInput" class="input" type="text">
+    </div>
+
+    <div class="plist" id="plist"></div>
+
+    <footer class="pop-foot">
+      <button class="btn btn-sm" id="btnTest"></button>
+      <span id="testResult" class="mono"></span>
+      <span class="spacer"></span>
+      <span class="muted ver" id="popVer"></span>
+    </footer>
+  </div>
+
+  <script src="../common/boot.js"></script>
+  <script src="../common/constants.js"></script>
+  <script src="../common/i18n.js"></script>
+  <script src="../common/defaults.js"></script>
+  <script src="../common/matcher.js"></script>
+  <script src="../common/storage.js"></script>
+  <script src="../common/theme.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

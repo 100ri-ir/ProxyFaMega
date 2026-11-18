@@ -1,0 +1,38 @@
+name: '🐞 گزارش باگ / Bug report'
+description: 'یک مشکل در ProxyFaMega گزارش دهید — Report a problem with ProxyFaMega'
+title: '[باگ]: '
+labels: ['bug']
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 'چه اتفاقی افتاد؟ / What happened?'
+      description: 'مراحل بازتولید و رفتار مورد انتظار را هم توضیح دهید / Steps to reproduce + expected behavior'
+      placeholder: '...'
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 'مرورگر / Browser'
+      options:
+        - 'Chrome'
+        - 'Edge'
+        - 'Firefox'
+        - 'Brave / دیگر / Other'
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 'نسخهٔ مرورگر و ProxyFaMega / Browser & extension version'
+      placeholder: 'مثال / e.g. Chrome 130, ProxyFaMega 1.0.0'
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 'اسکرین‌شات / Screenshots'
+      description: 'اگر ممکن است پیوست کنید / Attach if possible'
+    validations:
+      required: false

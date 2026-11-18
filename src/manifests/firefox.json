@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "name": "ProxyFaMega",
+  "short_name": "ProxyFaMega",
+  "version": "1.0.0",
+  "default_locale": "fa",
+  "description": "__MSG_extDescription__",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "proxyfamega@proxyfamega.dev",
+      "strict_min_version": "115.0"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "browser_action": {
+    "default_title": "__MSG_extName__",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "proxy",
+    "contextMenus",
+    "notifications",
+    "clipboardWrite",
+    "clipboardRead",
+    "unlimitedStorage",
+    "https://www.gstatic.com/*",
+    "https://cp.cloudflare.com/*",
+    "<all_urls>"
+  ],
+  "commands": {
+    "cycle-next-profile": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "__MSG_cmdNext__"
+    },
+    "cycle-prev-profile": {
+      "suggested_key": { "default": "Alt+Shift+O" },
+      "description": "__MSG_cmdPrev__"
+    }
+  }
+}
