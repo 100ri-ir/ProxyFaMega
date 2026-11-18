@@ -1,276 +1,742 @@
-<div dir="rtl" align="center">
+&#x20;\<div dir="rtl" align="center">
 
-<img src="assets/banner.png" width="100%" alt="ProxyFaMega — مدیریت پروکسی مرورگر">
+\<img src="assets/banner.png" width="100%" alt="ProxyFaMega — مدیریت پروکسی مرورگر">
 
-# ⚡ پروکسی‌فا مگا
+# ⚡ پروکسی‌فا مگا | ProxyFaMega
 
-**مدیریت پروکسی مرورگر — فارسی، خوش‌رنگ و حرفه‌ای**
+### مدیریت هوشمند پروکسی مرورگر، با تجربه‌ای فارسی و مدرن
 
-افزونه‌ای مدرن با طراحی الهام‌گرفته از iOS برای مدیریت پروفایل‌های پروکسی؛ بازطراحیِ ایرانی‌شده و فارسی‌شدهٔ ایدهٔ [ZeroOmega](https://github.com/zero-peak/ZeroOmega) — با ۱۰ پروفایل آماده (Hiddify، v2rayN، NekoBox، Happ، Clash و…)، سوییچ خودکار هوشمند با پیش‌تنظیمِ **«ایران مستقیم، بقیه با پروکسی»** و ۸ تم رنگی خوشگل.
+افزونه‌ای قدرتمند برای مدیریت پروفایل‌های پروکسی مرورگر، با رابط کاربری فارسی و راست‌چین، طراحی الهام‌گرفته از iOS و پشتیبانی از پروفایل‌های آماده برنامه‌های محبوبی مانند Hiddify، v2rayN، NekoBox، Happ و Clash.
 
-ساخته‌شده با ❤️ و ☕ توسط **[100ri.ir](https://github.com/100ri-ir)** برای کاربران فارسی‌زبان
+بازطراحی و فارسی‌سازی ایده مدیریت پروکسی [ZeroOmega](https://github.com/zero-peak/ZeroOmega) با امکانات اختصاصی، سوییچ خودکار هوشمند و تنظیمات آماده برای کاربران ایرانی.
 
-</div>
+**ساخته‌شده با ❤️ و ☕ توسط [100ri.ir](https://github.com/100ri-ir)**
 
-<div dir="rtl" align="center">
+\</div>
 
-![Version](https://img.shields.io/badge/نسخه-1.0.0-8B5CF6?style=flat-square) ![License](https://img.shields.io/badge/مجوز-MIT-22C55E?style=flat-square) ![Browsers](https://img.shields.io/badge/کروم%20%7C%20اج%20%7C%20فایرفاکس-پشتیبانی%20کامل-3B82F6?style=flat-square) ![Telemetry](https://img.shields.io/badge/جمع‌آوری%20داده-صفر-EC4899?style=flat-square) ![Made by](https://img.shields.io/badge/سازنده-100ri.ir-F59E0B?style=flat-square)
+\<div align="center">
 
-[![Latest Release](https://img.shields.io/github/v/release/100ri-ir/ProxyFaMega?style=flat-square&label=دانلود)](https://github.com/100ri-ir/ProxyFaMega/releases/latest) [![Stars](https://img.shields.io/github/stars/100ri-ir/ProxyFaMega?style=flat-square)](https://github.com/100ri-ir/ProxyFaMega/stargazers) [![Release Build](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml/badge.svg)](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/release.yml)
 
-**[📥 دانلود از Releases](https://github.com/100ri-ir/ProxyFaMega/releases/latest)** · **[✨ امکانات](#-امکانات)** · **[📥 نصب](#-نصب)** · **[🎬 پیش‌نمایش بدون نصب](#-پیشنمایش-بدون-نصب)** · **[🇬🇧 English](#-proxyfamega-english)**
 
-</div>
+\
 
-<div dir="rtl">
+
+
+\
+
+
+[📥 دانلود آخرین نسخه](https://github.com/100ri-ir/ProxyFaMega/releases/latest) · [✨ امکانات](#-امکانات) · [📸 تصاویر](#-نمایی-از-محیط-افزونه) · [📥 راهنمای نصب](#-راهنمای-نصب) · [🇬🇧 English](#proxyfamega-english)
+
+\</div>
 
 ---
 
-## 💡 چرا ProxyFaMega؟
+\<div dir="rtl">
 
-هر ایرانی که با Hiddify یا v2rayN یا نکوباکس کار می‌کند، وسط کارش به یک مشکل خورده: **تغییر سریع پروکسیِ مرورگر**. پروژه‌های قدیمی مثل SwitchyOmega یا جانشینش ZeroOmega عالی‌اند، ولی انگلیسی‌اند، قیافه‌شان دهه‌ای است و برای پروفایل‌های رایج ایرانی هیچ پیش‌فرضی ندارند.
+## 📑 فهرست مطالب
 
-ProxyFaMega همان قدرت را با **رابط کاملاً فارسی، راست‌به‌چپ و iOS-سبک** می‌آورد؛ با پورت‌های پیش‌فرضِ برنامه‌هایی که همین امروز استفاده می‌کنید، پیش‌تنظیم‌های آمادهٔ ایرانی و جزوه‌ای از توضیح و مثال زیرِ هر تنظیم — طوری که حتی اگر تازه‌کار هم باشید، همه‌چیز را می‌فهمید.
+- [معرفی پروژه](#-معرفی-پروژه)
+- [امکانات](#-امکانات)
+- [پروفایل‌های آماده](#-پروفایلهای-آماده)
+- [نمایی از محیط افزونه](#-نمایی-از-محیط-افزونه)
+- [راهنمای نصب](#-راهنمای-نصب)
+- [میان‌برهای صفحه‌کلید](#-میانبرهای-صفحهکلید)
+- [پیش‌نمایش بدون نصب](#-پیشنمایش-بدون-نصب)
+- [ساخت از سورس](#-ساخت-از-سورس)
+- [مهاجرت از ZeroOmega](#-مهاجرت-از-zeroomega--switchyomega)
+- [ساختار پروژه](#-ساختار-پروژه)
+- [نقشه راه](#-نقشه-راه)
+- [سپاس‌گزاری](#-سپاسگزاری)
+- [مجوز و سلب مسئولیت](#-مجوز-و-سلب-مسئولیت)
+
+## 💡 معرفی پروژه
+
+اگر از برنامه‌هایی مانند Hiddify، v2rayN، NekoBox یا Clash استفاده می‌کنید، احتمالاً بارها به تغییر تنظیمات پروکسی مرورگر نیاز پیدا کرده‌اید.
+
+افزونه ProxyFaMega با هدف ساده‌تر کردن همین فرایند طراحی شده است.
+
+این پروژه با الهام از [ZeroOmega](https://github.com/zero-peak/ZeroOmega) و [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)، تجربه‌ای جدید از مدیریت پروکسی مرورگر ارائه می‌دهد:
+
+- رابط کاربری کاملاً فارسی و راست‌چین
+- پروفایل‌های آماده برای برنامه‌های پراستفاده
+- مدیریت دستی و خودکار پروکسی
+- قوانین هوشمند بر اساس دامنه، آدرس و Regex
+- پشتیبان‌گیری و بازیابی تنظیمات
+- طراحی مدرن، سبک و قابل شخصی‌سازی
+
+هدف این است که مدیریت پروکسی مرورگر، بدون پیچیدگی‌های فنی و با چند کلیک ساده انجام شود.
 
 ## ✨ امکانات
 
-- 🇮🇷 **فارسی پیش‌فرض و کامل (راست‌به‌چپ)** + English — با فونت زیبای **[وزیرمتن](https://github.com/rastikerdar/vazirmatn)** و جابه‌جایی زبان در لحظه
-- 🎨 **۸ تم رنگی iOS-سبک** (آورورا، غروب، اقیانوس، نعنایی، آب‌نباتی، طلایی، نیمه‌شب، نئون) + **حالت شب خودکار** هماهنگ با سیستم‌عامل
-- 🚀 **۱۰ پروفایل آماده** با پورت‌های پیش‌فرض — جدول کامل پایین‌تر ⬇️
-- 🔀 **سوییچ خودکار هوشمند** با قوانین دامنه/آدرس/Regex + **تست‌کنندهٔ زندهٔ آدرس** + ۴ پیش‌تنظیم آماده، از جمله **«ایران مستقیم، بقیه با پروکسی»** (همهٔ `*.ir` و سایت‌های معروف ایرانی مثل دیجی‌کالا، آپارات، ترب، وارزش۳ و… مستقیم می‌روند)
-- 💾 **بکاپ حرفه‌ای**: خروجی رمزداری‌شده با AES-256-GCM، اسنپ‌شات خودکار (تا ۱۰ نسخه) و **درون‌ریزی مستقیم از ZeroOmega / SwitchyOmega**
-- 📝 **هر تنظیم با توضیح فارسی و مثال کاربردی** — بدون گیج‌شدن!
-- ⌨️ میان‌بر `Alt+Shift+P` برای پروفایل بعدی، منوی راست‌کلیک روی آیکون، نشان رنگی وضعیت، تست سرعت اتصال
-- 🔒 **ذخیرهٔ خودکار** همهٔ تغییرات + همگام‌سازی اختیاری بین دستگاه‌ها
-- 🕵️ **بدون جمع‌آوری داده** — همه‌چیز فقط روی دستگاه خودتان می‌ماند
-- 🧪 **تست‌های منطقی و PAC** — بیلد بدون تستِ سبز منتشر نمی‌شود
+### 🌐 رابط کاربری و شخصی‌سازی
 
-## 🚀 ۱۰ پروفایل آماده
+- 🇮🇷 پشتیبانی کامل از زبان فارسی و چیدمان RTL
+- 🇬🇧 پشتیبانی از زبان انگلیسی و تغییر زبان در لحظه
+- فونت فارسی [Vazirmatn](https://github.com/rastikerdar/vazirmatn)
+- طراحی مدرن با الهام از رابط کاربری iOS
+- 🎨 هشت تم رنگی:
+  - Aurora
+  - Sunset
+  - Ocean
+  - Mint
+  - Candy
+  - Gold
+  - Midnight
+  - Neon
+- پشتیبانی از حالت روشن، تاریک و تشخیص خودکار حالت سیستم
 
-| برنامه | پورت | پروتکل |
-|---|---:|---|
-| Hiddify | `12334` | Mixed (SOCKS5/HTTP) |
-| v2rayN / V2Ray | `10808` | SOCKS5 |
-| v2rayN (HTTP) | `10809` | HTTP |
-| NekoBox / Nekoray | `2080` | Mixed (SOCKS5/HTTP) |
-| Happ | `10808` | SOCKS5 (HTTP: `10809`) |
-| Clash Verge / CFW | `7890` | Mixed (HTTP/SOCKS5) |
-| Firefox Proxy | `10810` | سفارشی |
-| Shadowsocks | `1080` | SOCKS5 |
-| Tor | `9050` | SOCKS5 |
-| Psiphon | `8080` | HTTP (SOCKS: `1080`) |
+### 🚀 مدیریت پروفایل‌های پروکسی
 
-## 📸 نگاهی به رابط کاربری
+- ده پروفایل آماده برای برنامه‌های محبوب
+- تعریف پروفایل‌های اختصاصی
+- پشتیبانی از تنظیمات HTTP، SOCKS5 و Mixed
+- ذخیره خودکار تغییرات
+- جابه‌جایی سریع بین پروفایل‌ها
+- نمایش وضعیت پروفایل فعال
 
-<table>
-<tr>
-<td width="50%"><img src="screenshots/01-dashboard-fa-light.png" alt="داشبورد — حالت روشن"></td>
-<td width="50%"><img src="screenshots/06-dashboard-fa-dark.png" alt="داشبورد — حالت شب"></td>
-</tr>
-<tr>
-<td width="50%"><img src="screenshots/02-profiles-fa-light.png" alt="پروفایل‌ها"></td>
-<td width="50%"><img src="screenshots/03-auto-fa-light.png" alt="سوییچ خودکار"></td>
-</tr>
-<tr>
-<td width="30%"><img src="screenshots/08-popup-fa-light.png" alt="پاپ‌آپ"></td>
-<td width="30%"><img src="screenshots/11-popup-fa-dark.png" alt="پاپ‌آپ — حالت شب"></td>
-<td width="30%"><img src="screenshots/05-backup-fa-light.png" alt="پشتیبان‌گیری"></td>
-</tr>
-</table>
+### 🔀 سوییچ خودکار هوشمند
 
-<details>
-<summary><b>📸 تصاویر بیشتر</b> (تنظیمات، ویرایشگر پروفایل، نسخهٔ انگلیسی و…)</summary>
+- تعریف قوانین بر اساس دامنه و آدرس اینترنتی
+- پشتیبانی از Regex
+- تست زنده قوانین با وارد کردن آدرس
+- چهار الگوی آماده برای مدیریت ترافیک
+- پیش‌تنظیم ویژه **«ایران مستقیم، سایر سایت‌ها با پروکسی»**
 
-<table>
-<tr><td width="50%"><img src="screenshots/04-settings-fa-light.png" alt="تنظیمات"></td><td width="50%"><img src="screenshots/07-profiles-en-light.png" alt="Profiles — English"></td></tr>
-<tr><td width="50%"><img src="screenshots/10-profile-editor.png" alt="ویرایشگر پروفایل"></td><td width="50%"><img src="screenshots/09-popup-switched.png" alt="پاپ‌آپ بعد از تعویض پروفایل"></td></tr>
-</table>
+در این حالت، دامنه‌های `.ir` و فهرستی از وب‌سایت‌های ایرانی شناخته‌شده، از جمله دیجی‌کالا، آپارات، ترب و موارد دیگر، مستقیماً متصل می‌شوند.
 
-</details>
+### 💾 پشتیبان‌گیری و بازیابی
 
-## 📥 نصب
+- خروجی گرفتن از تنظیمات
+- رمزنگاری فایل پشتیبان با AES-256-GCM
+- ایجاد خودکار Snapshot
+- نگهداری حداکثر ۱۰ نسخه پشتیبان
+- درون‌ریزی مستقیم تنظیمات ZeroOmega و SwitchyOmega
+- امکان مشاهده پیش‌نمایش و انتخاب ادغام یا جایگزینی اطلاعات
 
-### 🟢 کروم / بریو — و 🔵 اج
+### ⌨️ امکانات تکمیلی
 
-1. آخرین نسخه را از [**صفحهٔ Releases**](https://github.com/100ri-ir/ProxyFaMega/releases/latest) دانلود کنید: فایل `ProxyFaMega-v1.0.0-chrome.zip` (برای اج همان بسته یا `edge` مناسب است)
-2. فایل ZIP را باز کنید (Extract)
-3. به `chrome://extensions` بروید (در اج: `edge://extensions`)
-4. حالت **Developer mode** را روشن کنید
-5. روی **Load unpacked** کلیک و پوشهٔ حاصل از unzip را انتخاب کنید
+- میان‌برهای صفحه‌کلید
+- منوی اختصاصی راست‌کلیک روی آیکون افزونه
+- نشانگر رنگی وضعیت پروکسی
+- تست تأخیر اتصال
+- همگام‌سازی اختیاری بین دستگاه‌ها
+- توضیحات فارسی و مثال کاربردی برای تنظیمات
 
-### 🦊 فایرفاکس
+### 🔒 حریم خصوصی
 
-1. به `about:debugging#/runtime/this-firefox` بروید
-2. **Load Temporary Add-on…** را بزنید و فایل `manifest.json` داخل بستهٔ `firefox` را انتخاب کنید
+- بدون سیستم Telemetry
+- بدون جمع‌آوری اطلاعات کاربران
+- ذخیره‌سازی اطلاعات به‌صورت محلی
+- بدون نیاز به حساب کاربری اختصاصی
 
-> 💡 نصب موقت فایرفاکس تا بسته‌شدن مرورگر می‌ماند؛ در نسخه‌های بعدی انتشار از طریق فروشگاه افزونه‌ها هم اضافه می‌شود.
+### 🧪 کنترل کیفیت
 
-## ⌨️ میان‌برها
-
-| عمل | کلید |
-|---|---|
-| پروفایل بعدی | `Alt + Shift + P` |
-| پروفایل قبلی | `Alt + Shift + O` |
-
-## 🎬 پیش‌نمایش بدون نصب
-
-فایل‌های `options/options.html` و `popup/popup.html` را مستقیم در مرورگر باز کنید؛ افزونه در **حالت دمو** با دادهٔ نمونه اجرا می‌شود:
-
-```
-options/options.html?view=auto&mode=dark&lang=en
-```
-
-پارامترها: `view` (`dashboard` / `profiles` / `auto` / `settings` / `backup` / `about`)، `mode` (`light` / `dark`)، `lang` (`fa` / `en`)، `theme` (مثل `aurora`، `sunset`، `ocean`، `midnight`…)
-
-## 🛠️ ساخت از سورس
-
-```bash
-git clone https://github.com/100ri-ir/ProxyFaMega.git
-cd ProxyFaMega
-python3 scripts/build.py     # → dist/ProxyFaMega-v1.0.0-{chrome,firefox,edge}.zip
-node test/logic_test.js      # تست‌های منطق و PAC
-python3 scripts/check_i18n.py # سلامت ترجمه‌ها
-```
-
-نیازمندی: فقط **پایتون ۳.۶+** و **Node** — بدون هیچ وابستگی خارجی. بسته‌های توزیع هم به‌صورت خودکار در [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) قرار می‌گیرند.
-
-## 🔄 مهاجرت از ZeroOmega / SwitchyOmega
-
-صفحهٔ **پشتیبان‌گیری ← بازیابی** → فایل خروجی JSON از ZeroOmega یا SwitchyOmega را رها کنید؛ پروفایل‌ها و قوانین سوییچ خودکار به‌صورت خودکار با پیش‌نمایش و امکان ادغام/جایگزینی منتقل می‌شوند.
-
-## 🧩 ساختار پروژه
-
-```
-ProxyFaMega/
-├── src/                  ← سورس اصلی افزونه
-│   ├── background/       ← سرویس‌ورکر MV3 (کرومیوم) و موتور پروکسی MV2 (فایرفاکس)
-│   ├── common/           ← ثابت‌ها، تم‌ها، i18n، ذخیره‌سازی، موتور قوانین (matcher/PAC)
-│   ├── popup/            ← پاپ‌آپ تعویض سریع
-│   ├── options/          ← تنظیمات کامل (داشبورد، پروفایل‌ها، سوییچ خودکار، بکاپ…)
-│   ├── assets/           ← آیکون‌ها + فونت وزیرمتن (۴ وزن)
-│   ├── _locales/         ← پیام‌های بومی‌سازی fa / en
-│   └── manifests/        ← مانیفست‌های chrome / firefox
-├── scripts/              ← build.py ، gen_icons.py ، check_i18n.py
-├── test/                 ← تست‌های منطق و PAC (بدون فریم‌ورک، فقط Node)
-├── screenshots/          ← تصاویر رابط کاربری
-├── assets/               ← بنر و فایل‌های داکیومنت
-└── .github/workflows/    ← بیلد و انتشار خودکار روی تگ
-```
-
-## 🗺️ نقشهٔ راه
-
-- [x] نسخهٔ ۱.۰ — داشبورد، پروفایل‌ها، سوییچ خودکار، بکاپ، ۸ تم، دوزبانه
-- [ ] انتشار در فروشگاه کروم وب و افزونه‌های فایرفاکس
-- [ ] پروفایل‌های آمادهٔ بیشتر + ویرایش گروهی
-- [ ] خروجی/درون‌ریزی قوانین با فرمت‌های رایج (Clash، PAC)
-- [ ] آزمایشگاه تست پروکسی داخل خود افزونه
-
-## 🤝 سپاس‌گزاری
-
-این پروژه یک **بازطراحیِ ایرانی‌شده و فارسی‌شده** از ایدهٔ محبوب مدیریت پروکسی مرورگر است و بدون آن‌ها ممکن نبود:
-
-- [**ZeroOmega**](https://github.com/zero-peak/ZeroOmega) — الهام‌بخش اصلیِ این پروژه؛ جانشین مدرن SwitchyOmega
-- [**SwitchyOmega**](https://github.com/FelisCatus/SwitchyOmega) — افزونهٔ کلاسیک و بزرگ مدیریت پروکسی که سال‌ها بر ما زندگی کرد
-- [**وزیرمتن (Vazirmatn)**](https://github.com/rastikerdar/vazirmatn) — فونت زیبای فارسی از [صابر راستی‌کردار](https://github.com/rastikerdar)
-
-## 👤 سازنده
-
-<div align="right">
-
-این پروژه را **[100ri.ir](https://github.com/100ri-ir)** ساخته و منتشر کرده است — برای ایران، با عشق ❤️
-
-اگر ProxyFaMega به کارتان آمد، ستاره‌اش را فراموش نکنید ⭐ — چانه‌تان گرم، اینترنت‌تان آزاد!
-
-</div>
-
-## 📄 مجوز و سلب مسئولیت
-
-**[MIT](LICENSE)** — آزاد برای استفاده، تغییر و انتشار.
-
-> ⚠️ این افزونه فقط یک «مدیر پروکسی» است و خودش هیچ سرور یا کانفیگی ارائه نمی‌دهد؛ استفاده از آن برای مصرف شخصی و قانونی است و مسئولیت نحوهٔ استفاده با کاربر است. هیچ داده‌ای جمع نمی‌شود و هیچ چیزی به هیچ سروری ارسال نمی‌شود.
-
-</div>
-
-<div dir="ltr" align="center">
+- تست‌های منطقی
+- تست موتور تولید PAC
+- بررسی سلامت ترجمه‌ها
+- اجرای تست‌ها در فرایند انتشار خودکار
 
 ---
 
-# ⚡ ProxyFaMega (English)
+## 🚀 پروفایل‌های آماده
 
-<img src="assets/banner.png" width="100%" alt="ProxyFaMega banner">
+ProxyFaMega با ۱۰ پروفایل از پیش تعریف‌شده عرضه می‌شود:
 
-**A gorgeous, Persian-first browser proxy manager** — an Iranian-made, Persian-redesigned take on the classic [ZeroOmega](https://github.com/zero-peak/ZeroOmega) / SwitchyOmega idea, built with ❤️ by **[100ri.ir](https://github.com/100ri-ir)**.
+| برنامه            | پورت پیش‌فرض | پروتکل                 |
+| :---------------- | :----------: | :--------------------- |
+| Hiddify           |    `12334`   | Mixed (SOCKS5 / HTTP)  |
+| v2rayN / V2Ray    |    `10808`   | SOCKS5                 |
+| v2rayN (HTTP)     |    `10809`   | HTTP                   |
+| NekoBox / Nekoray |    `2080`    | Mixed (SOCKS5 / HTTP)  |
+| Happ              |    `10808`   | SOCKS5 (HTTP: `10809`) |
+| Clash Verge / CFW |    `7890`    | Mixed (HTTP / SOCKS5)  |
+| Firefox Proxy     |    `10810`   | سفارشی                 |
+| Shadowsocks       |    `1080`    | SOCKS5                 |
+| Tor               |    `9050`    | SOCKS5                 |
+| Psiphon           |    `8080`    | HTTP (SOCKS: `1080`)   |
 
-[![Latest Release](https://img.shields.io/github/v/release/100ri-ir/ProxyFaMega?style=flat-square)](https://github.com/100ri-ir/ProxyFaMega/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square)](LICENSE)
-[![Chrome | Edge | Firefox](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6?style=flat-square)](https://github.com/100ri-ir/ProxyFaMega#-install)
+> **نکته:** پورت‌های فوق مقادیر پیش‌فرض هستند و ممکن است با توجه به تنظیمات برنامه یا نسخه آن متفاوت باشند. در صورت نیاز می‌توانید اطلاعات اتصال را در پروفایل مربوطه تغییر دهید.
 
-[**📥 Download**](https://github.com/100ri-ir/ProxyFaMega/releases/latest) · [**✨ Features**](#-features) · [**📥 Install**](#-install) · [**🎬 Live preview**](#-live-preview-without-installing)
+---
 
-</div>
+## 📸 نمایی از محیط افزونه
 
-<div dir="ltr">
+\<div align="center">
 
-## Why ProxyFaMega?
+### داشبورد اصلی
 
-If you run Hiddify, v2rayN or NekoBox, you know the pain: switching the browser proxy mid-work. SwitchyOmega (and its successor ZeroOmega) are legendary — but English-only, dated-looking, and with zero defaults for the apps most Iranian users actually use. ProxyFaMega brings the same power with a fully Persian (RTL), iOS-inspired UI, ready-made profiles for the apps people use today, Iranian one-click presets, and a friendly explanation under every single setting.
+\<table>
+\<tr>
+\<td width="50%" align="center">
+\*\*حالت روشن\*\*
 
-## ✨ Features
+\<img src="screenshots/01-dashboard-fa-light.png" width="100%" alt="داشبورد فارسی در حالت روشن">
+\</td>
+\<td width="50%" align="center">
+\*\*حالت تاریک\*\*
 
-- 🇮🇷 **Persian-first, fully RTL** + English — instant language switching, beautiful [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font baked in
-- 🎨 **8 iOS-style color themes** (Aurora, Sunset, Ocean, Mint, Candy, Gold, Midnight, Neon) + **auto dark mode** following the OS
-- 🚀 **10 ready-made profiles** — Hiddify `12334`, v2rayN `10808/10809`, NekoBox `2080`, Happ, Clash `7890`, Shadowsocks `1080`, Tor `9050`, Psiphon `8080`, and more
-- 🔀 **Smart auto-switch** with domain/URL/regex rules, a **live URL tester**, and 4 one-click presets — including **"Iran direct, rest proxied"** (every `*.ir` site plus famous Iranian sites stays direct)
-- 💾 **Professional backup** — AES-256-GCM encrypted exports, automatic snapshots (up to 10), and **direct import from ZeroOmega / SwitchyOmega**
-- 📝 **Every setting documented** with a Persian explanation and a practical example
-- ⌨️ `Alt+Shift+P` / `Alt+Shift+O` shortcuts, context menu, colored status badge, connection latency test
-- 🔒 **Autosave everywhere** + optional cross-device sync
-- 🕵️ **Zero telemetry** — everything stays on your device
-- 🧪 **Logic & PAC test suite** — releases are built only with green tests
+\<img src="screenshots/06-dashboard-fa-dark.png" width="100%" alt="داشبورد فارسی در حالت تاریک">
+\</td>
+\</tr>
+\</table>
 
-## 📥 Install
+### مدیریت پروفایل‌ها و سوییچ خودکار
 
-**Chrome / Brave / Edge (MV3) & Firefox (MV2):** grab the latest zip from the [Releases page](https://github.com/100ri-ir/ProxyFaMega/releases/latest), extract it, then:
+\<table>
+\<tr>
+\<td width="50%" align="center">
+\*\*مدیریت پروفایل‌ها\*\*
 
-- **Chrome / Brave / Edge:** open `chrome://extensions` (or `edge://extensions`), enable **Developer mode**, click **Load unpacked** and select the extracted folder.
-- **Firefox:** open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and pick the `manifest.json` inside the firefox package.
+\<img src="screenshots/02-profiles-fa-light.png" width="100%" alt="مدیریت پروفایل‌ها">
+\</td>
+\<td width="50%" align="center">
+\*\*سوییچ خودکار\*\*
 
-## 🎬 Live preview without installing
+\<img src="screenshots/03-auto-fa-light.png" width="100%" alt="تنظیمات سوییچ خودکار">
+\</td>
+\</tr>
+\</table>
 
-Open `options/options.html` or `popup/popup.html` directly in any browser — the extension runs in **demo mode** with sample data:
+### پنجره سریع و پشتیبان‌گیری
 
-```
+\<table>
+\<tr>
+\<td width="33%" align="center">
+\*\*Popup روشن\*\*
+
+\<img src="screenshots/08-popup-fa-light.png" width="100%" alt="پنجره سریع روشن">
+\</td>
+\<td width="33%" align="center">
+\*\*Popup تاریک\*\*
+
+\<img src="screenshots/11-popup-fa-dark.png" width="100%" alt="پنجره سریع تاریک">
+\</td>
+\<td width="33%" align="center">
+\*\*پشتیبان‌گیری\*\*
+
+\<img src="screenshots/05-backup-fa-light.png" width="100%" alt="صفحه پشتیبان‌گیری">
+\</td>
+\</tr>
+\</table>
+
+\</div>
+
+\<details>
+\<summary>\<b>📷 مشاهده تصاویر بیشتر\</b>\</summary>
+
+\<table>
+\<tr>
+\<td width="50%" align="center">
+
+**تنظیمات**
+
+\<img src="screenshots/04-settings-fa-light.png" width="100%" alt="تنظیمات افزونه">
+
+\</td>
+\<td width="50%" align="center">
+
+**نسخه انگلیسی**
+
+\<img src="screenshots/07-profiles-en-light.png" width="100%" alt="English profiles">
+
+\</td>
+\</tr>
+\<tr>
+\<td width="50%" align="center">
+
+**ویرایشگر پروفایل**
+
+\<img src="screenshots/10-profile-editor.png" width="100%" alt="ویرایشگر پروفایل">
+
+\</td>
+\<td width="50%" align="center">
+
+**تغییر پروفایل**
+
+\<img src="screenshots/09-popup-switched.png" width="100%" alt="پنجره پس از تغییر پروفایل">
+
+\</td>
+\</tr>
+\</table>
+
+\</details>
+
+---
+
+## 📥 راهنمای نصب
+
+### 🟢 Google Chrome، Brave و Microsoft Edge
+
+۱. وارد [صفحه آخرین نسخه‌ها (Releases)](https://github.com/100ri-ir/ProxyFaMega/releases/latest) شوید.
+
+۲. بسته ZIP مربوط به مرورگر خود را دریافت کنید.
+
+۳. فایل دانلودشده را Extract کنید.
+
+۴. صفحه مدیریت افزونه‌ها را باز کنید:
+
+| مرورگر | آدرس                  |
+| :----- | :-------------------- |
+| Chrome | `chrome://extensions` |
+| Brave  | `brave://extensions`  |
+| Edge   | `edge://extensions`   |
+
+۵. گزینه **Developer mode** را فعال کنید.
+
+۶. روی **Load unpacked** کلیک کنید.
+
+۷. پوشه استخراج‌شده افزونه را انتخاب کنید.
+
+### 🦊 Mozilla Firefox
+
+۱. بسته مخصوص Firefox را از صفحه Releases دریافت کنید.
+
+۲. فایل ZIP را استخراج کنید.
+
+۳. وارد آدرس زیر شوید:
+
+`about:debugging#/runtime/this-firefox`
+
+۴. روی **Load Temporary Add-on…** کلیک کنید.
+
+۵. فایل `manifest.json` موجود در بسته Firefox را انتخاب کنید.
+
+> **توجه:** بارگذاری افزونه به این روش در فایرفاکس موقت است و با بسته‌شدن مرورگر، افزونه از فهرست افزونه‌های موقت حذف می‌شود. انتشار از طریق فروشگاه افزونه‌ها در نقشه راه پروژه قرار دارد.
+
+---
+
+## ⌨️ میان‌برهای صفحه‌کلید
+
+| عملکرد               |      میان‌بر      |
+| :------------------- | :---------------: |
+| رفتن به پروفایل بعدی | `Alt + Shift + P` |
+| رفتن به پروفایل قبلی | `Alt + Shift + O` |
+
+---
+
+## 🎬 پیش‌نمایش بدون نصب
+
+برای مشاهده محیط افزونه بدون نصب آن، می‌توانید فایل‌های زیر را مستقیماً در مرورگر باز کنید:
+
+- `options/options.html`
+- `popup/popup.html`
+
+در این حالت، افزونه با اطلاعات نمونه و در **Demo Mode** اجرا می‌شود.
+
+برای نمونه، آدرس زیر را در مرورگر باز کنید:
+
+```text
 options/options.html?view=auto&mode=dark&lang=en
 ```
 
-Parameters: `view` (`dashboard`, `profiles`, `auto`, `settings`, `backup`, `about`), `mode` (`light`/`dark`), `lang` (`fa`/`en`), `theme` (e.g. `aurora`, `sunset`, `ocean`, `midnight`…).
+### پارامترهای قابل استفاده
 
-## 🛠️ Build from source
+| پارامتر | مقادیر                                                                   |
+| :------ | :----------------------------------------------------------------------- |
+| `view`  | `dashboard`، `profiles`، `auto`، `settings`، `backup`، `about`           |
+| `mode`  | `light`، `dark`                                                          |
+| `lang`  | `fa`، `en`                                                               |
+| `theme` | `aurora`، `sunset`، `ocean`، `mint`، `candy`، `gold`، `midnight`، `neon` |
+
+---
+
+## 🛠️ ساخت پروژه از سورس
+
+### پیش‌نیازها
+
+- Python 3.6 یا بالاتر
+- Node.js
+
+این پروژه برای ساخت بسته‌های توزیع به وابستگی خارجی پایتون نیاز ندارد.
+
+### دریافت سورس
+
+```bash
+git clone https://github.com/100ri-ir/ProxyFaMega.git
+
+cd ProxyFaMega
+```
+
+### ساخت بسته‌های افزونه
+
+```bash
+python3 scripts/build.py
+```
+
+بسته‌های خروجی در پوشه `dist/` ساخته می‌شوند:
+
+```text
+dist/
+├── ProxyFaMega-v1.0.0-chrome.zip
+├── ProxyFaMega-v1.0.0-firefox.zip
+└── ProxyFaMega-v1.0.0-edge.zip
+```
+
+### اجرای تست‌ها
+
+```bash
+node test/logic_test.js
+```
+
+بررسی سلامت ترجمه‌ها:
+
+```bash
+python3 scripts/check_i18n.py
+```
+
+> **نکته:** انتشار نسخه‌ها از طریق GitHub Actions و بر اساس تگ‌های انتشار انجام می‌شود.
+
+---
+
+## 🔄 مهاجرت از ZeroOmega / SwitchyOmega
+
+اگر قبلاً از ZeroOmega یا SwitchyOmega استفاده می‌کردید، می‌توانید تنظیمات خود را به ProxyFaMega منتقل کنید.
+
+مراحل انجام کار:
+
+۱. وارد بخش **پشتیبان‌گیری و بازیابی** شوید.
+
+۲. فایل JSON خروجی ZeroOmega یا SwitchyOmega را انتخاب کنید.
+
+۳. پیش‌نمایش اطلاعات شناسایی‌شده را بررسی کنید.
+
+۴. روش انتقال را انتخاب کنید:
+
+- **Merge:** ادغام اطلاعات با تنظیمات فعلی
+- **Replace:** جایگزینی تنظیمات فعلی با اطلاعات واردشده
+
+به این ترتیب می‌توانید بدون تعریف مجدد پروفایل‌ها و قوانین، تنظیمات قبلی خود را منتقل کنید.
+
+---
+
+## 🧩 ساختار پروژه
+
+```text
+ProxyFaMega/
+│
+├── src/
+│   ├── background/       # Service Worker (MV3) و موتور پروکسی (MV2)
+│   ├── common/           # هسته مشترک، تنظیمات، تم‌ها، i18n و PAC
+│   ├── popup/            # پنجره تغییر سریع پروفایل
+│   ├── options/          # داشبورد و صفحات تنظیمات
+│   ├── assets/           # آیکون‌ها و فونت‌ها
+│   ├── _locales/         # ترجمه‌های fa و en
+│   └── manifests/        # مانیفست مرورگرها
+│
+├── scripts/              # اسکریپت‌های ساخت و بررسی
+├── test/                 # تست‌های منطقی و PAC
+├── screenshots/          # تصاویر محیط افزونه
+├── assets/               # بنر و منابع گرافیکی
+└── .github/
+    └── workflows/        # فرایندهای خودکار GitHub Actions
+```
+
+---
+
+## 🗺️ نقشه راه توسعه
+
+### نسخه ۱.۰
+
+- [x] داشبورد مدیریت پروکسی
+- [x] مدیریت پروفایل‌ها
+- [x] سوییچ خودکار و قوانین اختصاصی
+- [x] پشتیبان‌گیری و بازیابی
+- [x] هشت تم رنگی
+- [x] پشتیبانی از فارسی و انگلیسی
+
+### برنامه‌های آینده
+
+- [ ] انتشار در Chrome Web Store
+- [ ] انتشار در Firefox Add-ons
+- [ ] افزودن پروفایل‌های آماده بیشتر
+- [ ] امکان ویرایش گروهی پروفایل‌ها
+- [ ] پشتیبانی از خروجی و درون‌ریزی قوانین با فرمت‌های رایج مانند Clash و PAC
+- [ ] توسعه آزمایشگاه تست پروکسی درون افزونه
+
+---
+
+## 🤝 سپاس‌گزاری
+
+ProxyFaMega با الهام از تلاش توسعه‌دهندگان پروژه‌های متن‌باز زیر ساخته شده است:
+
+| پروژه                                                      | توضیحات                                          |
+| :--------------------------------------------------------- | :----------------------------------------------- |
+| [ZeroOmega](https://github.com/zero-peak/ZeroOmega)        | الهام‌بخش اصلی و جانشین مدرن SwitchyOmega        |
+| [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) | یکی از پروژه‌های شناخته‌شده مدیریت پروکسی مرورگر |
+| [Vazirmatn](https://github.com/rastikerdar/vazirmatn)      | فونت فارسی متن‌باز، ساخته صابر راستی‌کردار       |
+
+از تمام توسعه‌دهندگان و مشارکت‌کنندگان این پروژه‌ها سپاس‌گزاریم.
+
+---
+
+## 👤 سازنده
+
+\<div align="center">
+
+[**100ri.ir**](https://github.com/100ri-ir)
+
+توسعه و انتشار با ❤️ برای کاربران فارسی‌زبان
+
+اگر ProxyFaMega برای شما مفید بوده است، با دادن یک ⭐ به پروژه از توسعه آن حمایت کنید.
+
+[⭐ ثبت ستاره در GitHub](https://github.com/100ri-ir/ProxyFaMega/stargazers) · [🐛 گزارش مشکل](https://github.com/100ri-ir/ProxyFaMega/issues)
+
+\</div>
+
+---
+
+## 📄 مجوز و سلب مسئولیت
+
+این پروژه تحت مجوز [MIT](LICENSE) منتشر شده است و استفاده، تغییر و بازنشر آن مطابق شرایط این مجوز آزاد است.
+
+**سلب مسئولیت:**
+
+ProxyFaMega صرفاً یک ابزار مدیریت پروکسی مرورگر است و هیچ سرور، اشتراک یا کانفیگ پروکسی ارائه نمی‌دهد.
+
+مسئولیت تنظیمات و نحوه استفاده از افزونه بر عهده کاربر است.
+
+این پروژه از سیستم Telemetry برای جمع‌آوری داده‌های کاربران استفاده نمی‌کند.
+
+\</div>
+
+---
+
+\<div dir="ltr" align="center">
+
+# ⚡ ProxyFaMega (English)
+
+**A modern, Persian-first browser proxy manager.**
+
+ProxyFaMega is an Iranian-made browser extension inspired by [ZeroOmega](https://github.com/zero-peak/ZeroOmega) and [SwitchyOmega), featuring a fully Persian RTL interface, ready-made proxy profiles, intelligent auto-switching, customizable themes, and encrypted backups.
+
+Built with ❤️ by [**100ri.ir**](https://github.com/100ri-ir).
+
+[📥 Latest Release](https://github.com/100ri-ir/ProxyFaMega/releases/latest) · [✨ Features](#-features) · [📥 Installation](#-installation) · [🎬 Live Preview](#-live-preview-without-installation)
+
+---
+
+## 💡 Why ProxyFaMega?
+
+Managing browser proxy settings can become tedious when switching between applications such as Hiddify, v2rayN, NekoBox, and Clash.
+
+ProxyFaMega brings a simpler and more modern experience, combining the flexibility of established proxy managers with a Persian-first interface and ready-to-use configurations.
+
+## ✨ Features
+
+### Interface & Customization
+
+- 🇮🇷 Fully localized Persian RTL interface
+- 🇬🇧 English language support
+- Built-in [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font
+- Modern iOS-inspired design
+- Eight customizable color themes
+- Automatic light/dark mode following system preferences
+
+### Proxy Management
+
+- 10 ready-made proxy profiles
+- Custom profile creation and editing
+- HTTP, SOCKS5, and Mixed configurations
+- Automatic settings persistence
+- Quick profile switching
+- Active profile status indicator
+
+### Smart Auto-Switching
+
+- Domain, URL, and Regex-based rules
+- Live URL rule tester
+- Four built-in switching presets
+- **Iran Direct, Rest Proxied** preset
+
+The Iranian preset allows `.ir` domains and selected popular Iranian websites to connect directly, while other destinations use the configured proxy.
+
+### Backup & Restore
+
+- JSON configuration exports
+- AES-256-GCM encrypted backups
+- Automatic snapshots (up to 10 versions)
+- Direct import from ZeroOmega and SwitchyOmega
+- Preview, merge, and replace options
+
+### Additional Features
+
+- `Alt + Shift + P` and `Alt + Shift + O` shortcuts
+- Browser context menu integration
+- Colored proxy status badge
+- Connection latency testing
+- Optional cross-device synchronization
+- Persian documentation and examples for settings
+
+### Privacy
+
+- No telemetry
+- No user analytics collection
+- Local configuration storage
+- No dedicated account required
+
+---
+
+## 📥 Installation
+
+### Chrome, Brave & Microsoft Edge
+
+1. Download the latest browser package from [GitHub Releases](https://github.com/100ri-ir/ProxyFaMega/releases/latest).
+2. Extract the ZIP archive.
+3. Open `chrome://extensions` or `edge://extensions`.
+4. Enable **Developer mode**.
+5. Click **Load unpacked**.
+6. Select the extracted extension folder.
+
+### Mozilla Firefox
+
+1. Download and extract the Firefox package.
+2. Open `about:debugging#/runtime/this-firefox`.
+3. Click **Load Temporary Add-on…**.
+4. Select the `manifest.json` file inside the Firefox package.
+
+> Temporary Firefox add-ons are removed from the temporary add-ons list when the browser closes.
+
+---
+
+## 🎬 Live Preview Without Installation
+
+Open either of the following files directly in your browser:
+
+- `options/options.html`
+- `popup/popup.html`
+
+The interface runs in **Demo Mode** with sample data.
+
+Example:
+
+```text
+options/options.html?view=auto&mode=dark&lang=en
+```
+
+### URL Parameters
+
+| Parameter | Supported values                                                         |
+| :-------- | :----------------------------------------------------------------------- |
+| `view`    | `dashboard`, `profiles`, `auto`, `settings`, `backup`, `about`           |
+| `mode`    | `light`, `dark`                                                          |
+| `lang`    | `fa`, `en`                                                               |
+| `theme`   | `aurora`, `sunset`, `ocean`, `mint`, `candy`, `gold`, `midnight`, `neon` |
+
+---
+
+## 🛠️ Build from Source
+
+### Requirements
+
+- Python 3.6+
+- Node.js
+
+No external Python dependencies are required for building the distribution packages.
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/100ri-ir/ProxyFaMega.git
 cd ProxyFaMega
-python3 scripts/build.py      # -> dist/ProxyFaMega-v1.0.0-{chrome,firefox,edge}.zip
-node test/logic_test.js       # logic & PAC tests
-python3 scripts/check_i18n.py # translation health check
 ```
 
-Requirements: **Python 3.6+** and **Node** only — no external dependencies. Tagged commits automatically build and publish packages via GitHub Actions.
+### Build
+
+```bash
+python3 scripts/build.py
+```
+
+Generated packages:
+
+```text
+dist/
+├── ProxyFaMega-v1.0.0-chrome.zip
+├── ProxyFaMega-v1.0.0-firefox.zip
+└── ProxyFaMega-v1.0.0-edge.zip
+```
+
+### Run Tests
+
+```bash
+node test/logic_test.js
+python3 scripts/check_i18n.py
+```
+
+Tagged releases are automatically built and published through GitHub Actions.
+
+---
 
 ## 🔄 Migrating from ZeroOmega / SwitchyOmega
 
-Backup page → Restore → drop the JSON export from ZeroOmega or SwitchyOmega; profiles and auto-switch rules are imported with a preview and merge/replace options.
+Open the Backup & Restore page, select your exported JSON file, review the imported configurations, and choose either Merge or Replace.
+
+Your profiles and auto-switch rules can be transferred without recreating them manually.
+
+---
+
+## 🧩 Project Structure
+
+```text
+ProxyFaMega/
+├── src/
+│   ├── background/
+│   ├── common/
+│   ├── popup/
+│   ├── options/
+│   ├── assets/
+│   ├── _locales/
+│   └── manifests/
+├── scripts/
+├── test/
+├── screenshots/
+├── assets/
+└── .github/workflows/
+```
+
+---
+
+## 🗺️ Roadmap
+
+### Version 1.0
+
+- [x] Dashboard
+- [x] Proxy profiles
+- [x] Automatic switching
+- [x] Backup and restore
+- [x] Eight color themes
+- [x] Persian and English localization
+
+### Planned
+
+- [ ] Chrome Web Store publication
+- [ ] Firefox Add-ons publication
+- [ ] More ready-made profiles
+- [ ] Bulk profile editing
+- [ ] Clash and PAC rule import/export
+- [ ] Built-in proxy testing laboratory
+
+---
 
 ## 🤝 Credits
 
-- [**ZeroOmega**](https://github.com/zero-peak/ZeroOmega) — the main inspiration for this project
-- [**SwitchyOmega**](https://github.com/FelisCatus/SwitchyOmega) — the classic proxy manager
-- [**Vazirmatn**](https://github.com/rastikerdar/vazirmatn) — the beautiful Persian font
+- [ZeroOmega](https://github.com/zero-peak/ZeroOmega) — Main inspiration.
+- [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) — Classic browser proxy manager.
+- [Vazirmatn](https://github.com/rastikerdar/vazirmatn) — Persian typeface by Saber Rastikerdar.
 
 ## 📄 License
 
-**[MIT](LICENSE)** — free to use, modify and share. This extension is a proxy *manager*: it ships no servers or configs and collects no data; use it responsibly.
+Licensed under the [MIT License](LICENSE).
 
-**Made with ❤️ in Iran by [100ri.ir](https://github.com/100ri-ir)** — if it helps you, give it a star ⭐
+ProxyFaMega is a browser proxy manager. It does not provide proxy servers, subscriptions, or configurations. Users are responsible for their own configurations and usage.
 
-</div>
+No telemetry or user analytics are collected.
+
+---
+
+\<div align="center">
+
+**Made with ❤️ in Iran by [100ri.ir](https://github.com/100ri-ir)**
+
+⭐ If you find ProxyFaMega useful, consider giving it a star!
+
+\</div> \</div>
