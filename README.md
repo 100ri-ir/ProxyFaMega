@@ -6,7 +6,7 @@
 
 ![version](https://img.shields.io/badge/version-2.1.0-8B5CF6) ![license](https://img.shields.io/badge/license-MIT-22C55E) ![browsers](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6) ![CI](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/ci.yml/badge.svg) ![telemetry](https://img.shields.io/badge/telemetry-none-0F766E)
 
-فارسی (این صفحه) | [English — jump to the English section](#english)
+**فارسی** · [English ↓](#english)
 
 </div>
 
@@ -156,6 +156,8 @@ Chrome 111+، Edge (هر دو MV3) و Firefox 115+ (MV2) — با سه بیلد 
 ---
 
 ## English
+
+[فارسی ↑](#فارسی) · **English**
 
 **ProxyFaMega** is a browser proxy-profile manager: Persian-first, fully RTL, bilingual (Persian/English), with a compact iOS-style UI — and zero telemetry. A simpler, faster alternative to SwitchyOmega / ZeroOmega that ships ready-made profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Tor, Psiphon… and routes your browser traffic to your own local proxy client.
 
