@@ -1,113 +1,292 @@
-<div dir="rtl" align="center">
+<p align="center"><img src="screenshots/banner.png" alt="ProxyFaMega" width="100%"></p>
 
-# ⚡ ProxyFaMega
+<div align="center">
 
-**مدیریت پروکسی مرورگر — فارسی، زیبا و حرفه‌ای**
+**ProxyFaMega** — مدیریت پروفایل‌های پروکسی مرورگر | Persian-first bilingual proxy profile manager
 
-افزونه‌ای مدرن با طراحی الهام‌گرفته از iOS برای مدیریت پروفایل‌های پروکسی؛ جایگزین زیباتر و سریع‌تر SwitchyOmega / ZeroOmega — ساخته‌شده با ❤️ برای فارسی‌زبان‌ها.
+![version](https://img.shields.io/badge/version-2.1.0-8B5CF6) ![license](https://img.shields.io/badge/license-MIT-22C55E) ![browsers](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6) ![CI](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/ci.yml/badge.svg) ![telemetry](https://img.shields.io/badge/telemetry-none-0F766E)
 
-![version](https://img.shields.io/badge/version-1.0.0-8B5CF6) ![license](https://img.shields.io/badge/license-MIT-22C55E) ![browsers](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6)
+فارسی (این صفحه) | [English — jump to the English section](#english)
 
 </div>
 
-<p align="center">
-  <img src="screenshots/01-dashboard-fa-light.png" width="49%" alt="داشبورد">
-  <img src="screenshots/06-dashboard-fa-dark.png" width="49%" alt="حالت شب">
-</p>
-<p align="center">
-  <img src="screenshots/02-profiles-fa-light.png" width="49%" alt="پروفایل‌ها">
-  <img src="screenshots/08-popup-fa-light.png" width="20%" alt="پاپ‌آپ">
-</p>
+---
 
-## ✨ امکانات
+<div dir="rtl">
 
-- 🇮🇷 **فارسی پیش‌فرض و کامل (راست‌به‌چپ)** + English — با فونت زیبای **وزیرمتن**
-- 🎨 **۸ تم رنگی iOS-سبک** (آورورا، غروب، اقیانوس، نعنایی، آب‌نباتی، طلایی، نیمه‌شب، نئون) + **حالت شب خودکار**
-- 🚀 **۱۰ پروفایل آماده** با پورت‌های پیش‌فرض:
+## فارسی
+
+**ProxyFaMega** یک مدیر پروفایل پروکسی برای مرورگر است: فارسی‌محور و راست‌به‌چپ، دوزبانه (فارسی/انگلیسی)، با رابط کاربری جمع‌وجور به سبک iOS — و بدون هیچ جمع‌آوری داده. جایگزینی ساده‌تر و سریع‌تر برای SwitchyOmega / ZeroOmega که با پروفایل‌های آمادهٔ Hiddify، v2rayN، NekoBox، Happ، Clash، Tor، Psiphon و… کار می‌کند و ترافیک را به کلاینت محلی شما می‌فرستد.
+
+> **v2.1.0 — نسخهٔ نهایی:** ماژول 100riVPN که در 2.0.x وجود داشت به‌طور کامل حذف شد؛ ProxyFaMega حالا یک ابزار تک‌منظورهٔ مدیریت پروکسی است. توکن‌های قدیمی در اولین اجرا خودکار پاک می‌شوند و بکاپ‌های قدیمی بدون خطا باز می‌شوند (بخش VPN نادیده گرفته می‌شود). جزئیات: [CHANGELOG](CHANGELOG.md)
+
+### گالری
+
+<p align="center"><img src="screenshots/01-dashboard-fa-light.png" width="49%" alt="داشبورد"><img src="screenshots/02-dashboard-fa-dark.png" width="49%" alt="داشبورد — حالت تاریک"></p>
+<p align="center"><img src="screenshots/09-popup-fa-light.png" width="24%" alt="پاپ‌آپ"><img src="screenshots/11-popup-switched.png" width="24%" alt="پاپ‌آپ — تعویض پروفایل"><img src="screenshots/10-popup-fa-dark.png" width="24%" alt="پاپ‌آپ — تاریک"></p>
+<p align="center"><img src="screenshots/03-profiles-fa-light.png" width="49%" alt="پروفایل‌ها"><img src="screenshots/04-profile-editor-fa.png" width="49%" alt="ویرایش پروفایل"></p>
+<p align="center"><img src="screenshots/05-auto-switch-fa-light.png" width="49%" alt="سوییچ خودکار"><img src="screenshots/06-backup-fa-light.png" width="49%" alt="بکاپ"></p>
+<p align="center"><img src="screenshots/07-settings-fa-light.png" width="49%" alt="تنظیمات — فارسی"><img src="screenshots/08-settings-en-light.png" width="49%" alt="تنظیمات — انگلیسی"></p>
+
+### امکانات
+
+- **پروفایل‌ها** — ۹ پروفایل آماده + هر تعداد پروفایل دلخواه (SOCKS5 / SOCKS4 / HTTP / HTTPS)، تست اتصال، منوی راست‌کلیک، نشان رنگی وضعیت روی آیکون
+- **سوییچ خودکار** — قوانین دامنه / URL / Regex با تست‌کنندهٔ زنده و ۴ پیش‌تنظیم یک‌کلیکی، از جمله «ایران مستقیم، بقیه با پروکسی»
+- **بکاپ حرفه‌ای** — رمزداری AES-256-GCM، اسنپ‌شات خودکار تا ۱۰ نسخه، درون‌ریزی مستقیم از ZeroOmega / SwitchyOmega، همگام‌سازی اختیاری بین دستگاه‌ها از طریق حساب مرورگر
+- **ظاهر** — ۸ تم رنگی، حالت روشن/تاریک/خودکار (پیش‌فرض کارخانه: تبعیت از تم مرورگر)، فونت وزیرمتن در ۴ وزن، سه اندازهٔ فونت
+- **زبان** — فارسی پیش‌فرض + انگلیسی؛ تعویض آنی بدون راه‌اندازی مجدد
+- **میان‌برها** — <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> پروفایل بعدی، <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> پروفایل قبلی
+- **حریم خصوصی** — صفر تلمتری؛ همه‌چیز روی دستگاه شما می‌ماند ([PRIVACY.md](PRIVACY.md))
+
+### پروفایل‌های آماده
 
 | برنامه | پورت | پروتکل |
 |---|---|---|
-| Hiddify | `12334` | Mixed (SOCKS5/HTTP) |
-| v2rayN / V2Ray | `10808` (HTTP: `10809`) | SOCKS5 |
-| NekoBox / Nekoray | `2080` | Mixed |
+| Hiddify | `12334` | SOCKS5 |
+| v2rayN / V2Ray | `10808` | SOCKS5 |
+| v2rayN (HTTP) | `10809` | HTTP |
+| NekoBox / Nekoray | `2080` | SOCKS5 |
 | Happ | `10808` | SOCKS5 |
-| Clash Verge / CFW | `7890` | Mixed |
-| Firefox Proxy | `10810` | سفارشی |
+| Clash Verge / CFW | `7890` | HTTP |
 | Shadowsocks | `1080` | SOCKS5 |
 | Tor | `9050` | SOCKS5 |
 | Psiphon | `8080` | HTTP |
 
-- 🔀 **سوییچ خودکار هوشمند** با قوانین دامنه/آدرس/Regex + تست‌کننده زنده + پیش‌تنظیم آماده **«ایران مستقیم، بقیه با پروکسی»** (همه `*.ir` و سایت‌های معروف ایرانی مستقیم)
-- 💾 **بکاپ حرفه‌ای**: رمزداری AES-256، اسنپ‌شات خودکار (تا ۱۰ نسخه)، **درون‌ریزی مستقیم از ZeroOmega / SwitchyOmega**
-- 📝 **هر تنظیم با توضیح و مثال** — کاربر تازه‌کار هم همه‌چیز را می‌فهمد
-- ⌨️ میان‌بر `Alt+Shift+P` برای پروفایل بعدی، منوی راست‌کلیک، نشان رنگی روی آیکون، تست سرعت اتصال
-- 🔒 **ذخیره خودکار** همه تغییرات + همگام‌سازی اختیاری بین دستگاه‌ها
-- 🕵️ **بدون جمع‌آوری داده** — همه‌چیز فقط روی دستگاه شما
+### نصب
 
-<p align="center"><img src="screenshots/03-auto-fa-light.png" width="49%" alt="سوییچ خودکار"> <img src="screenshots/05-backup-fa-light.png" width="49%" alt="پشتیبان‌گیری"></p>
+بستهٔ واحد [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) (`ProxyFaMega-v2.1.0.zip`) شامل `Extention/` با سه بیلد آماده + `Source/` کامل است.
 
-## 📥 نصب
+**Chrome / Brave / Edge**
 
-### گوگل کروم / اج / بریو
-1. فایل `ProxyFaMega-v1.0.0-chrome.zip` را باز کنید (Unzip)
-2. به `chrome://extensions` بروید
-3. حالت **Developer mode** را روشن کنید
-4. روی **Load unpacked** کلیک و پوشه `chrome` را انتخاب کنید
+1. زیپ را باز کنید و به `Extention/chrome` بروید
+2. `chrome://extensions` را باز کنید و **Developer mode** را روشن کنید
+3. **Load unpacked** ← پوشهٔ `chrome` را انتخاب کنید
 
-> برای اج دقیقاً همین مراحل در `edge://extensions` — یا از بسته `edge` استفاده کنید.
+**Firefox**
 
-### فایرفاکس
 1. به `about:debugging#/runtime/this-firefox` بروید
-2. **Load Temporary Add-on…** را بزنید و فایل `manifest.json` داخل پوشه `firefox` را انتخاب کنید
+2. **Load Temporary Add-on…** ← فایل `manifest.json` داخل `Extention/firefox` را انتخاب کنید
 
-## 🛠️ ساخت از سورس
+> بیلد Edge دقیقاً همین مراحل را در `edge://extensions` با پوشهٔ `edge` دارد.
+
+### ساخت از سورس
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ProxyFaMega.git
+git clone https://github.com/100ri-ir/ProxyFaMega.git
 cd ProxyFaMega
-python3 scripts/build.py     # → dist/ProxyFaMega-v1.0.0-{chrome,firefox,edge}.zip
-node test/logic_test.js      # تست‌های منطق و PAC
+node test/logic_test.js && node test/background_smoke_test.js   # تست‌ها
+python3 scripts/build.py                                        # بیلد
 ```
 
-نیازمندی: فقط پایتون ۳.۶+ و نود — بدون هیچ پکیج خارجی.
+خروجی: `dist/ProxyFaMega-v2.1.0.zip` با ساختار `Extention/{chrome,edge,firefox}` + `Source/`.
+نیازمندی: Python 3.6+ و Node — بدون هیچ وابستگی خارجی.
 
-## 🎬 پیش‌نمایش بدون نصب
+### پیش‌نمایش بدون نصب (حالت دمو)
 
-فایل‌های `options/options.html` و `popup/popup.html` را مستقیم در مرورگر باز کنید؛ افزونه در **حالت دمو** با داده نمونه اجرا می‌شود:
+فایل‌های `src/options/options.html` و `src/popup/popup.html` را مستقیم در مرورگر باز کنید؛ افزونه با دادهٔ نمونه اجرا می‌شود:
 
 ```
-options/options.html?view=auto&mode=dark&lang=en
+options.html?view=auto&mode=dark&lang=en
+popup.html?mode=dark&lang=en
 ```
 
-## ⌨️ میان‌برها
+### میان‌برها
 
 | عمل | کلید |
 |---|---|
-| پروفایل بعدی | `Alt + Shift + P` |
-| پروفایل قبلی | `Alt + Shift + O` |
+| پروفایل بعدی | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> |
+| پروفایل قبلی | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> |
 
-## 🔄 مهاجرت از ZeroOmega
+### سوییچ خودکار
 
-صفحه **پشتیبان‌گیری → بازیابی** → فایل خروجی JSON از ZeroOmega/SwitchyOmega را رها کنید؛ پروفایل‌ها و قوانین سوییچ خودکار به‌صورت خودکار منتقل می‌شوند.
+- قوانین **دامنه** (`*.example.com`)، **URL** (آدرس کامل یا الگو) و **Regex** با اولویت از بالا به پایین؛ هر قاعده فعال/غیرفعال
+- تست‌کنندهٔ زنده: هر URL را بدهید، می‌بینید کدام قاعده و کدام خروجی (پروکسی/مستقیم) اعمال می‌شود
+- ۴ پیش‌تنظیم آماده: «ایران مستقیم، بقیه با پروکسی» (همهٔ `*.ir` و ۱۵+ سایت ایرانی معروف مستقیم)، «فقط گوگل و یوتیوب»، «پیام‌رسان‌ها و شبکه‌های اجتماعی»، «همه‌چیز با پروکسی»
+- در کروم/اج از PAC تولیدشده و در فایرفاکس از `proxy.onRequest` استفاده می‌شود
 
-## 🤝 سپاس‌گزاری
+### بکاپ و مهاجرت
 
-- [ZeroOmega](https://github.com/zero-peak/ZeroOmega) — الهام‌بخش این پروژه
-- [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) — افزونه کلاسیک و بزرگ مدیریت پروکسی
-- [Vazirmatn](https://github.com/rastikerdar/vazirmatn) فونت فارسی [راستی‌کردار](https://github.com/rastikerdar)
+- خروجی کامل/جزیی + رمزداری AES-256-GCM + اسنپ‌شات خودکار (تا ۱۰ نسخه) پیش از تغییرات مهم
+- **مهاجرت از ZeroOmega / SwitchyOmega**: صفحهٔ بکاپ → بازیابی ← فایل JSON را رها کنید؛ پروفایل‌ها و قوانین سوییچ خودکار منتقل می‌شوند (حالت ادغام یا جایگزینی)
+- بکاپ‌های v2.0.x (با حساب‌های VPN) بدون خطا باز می‌شوند؛ دادهٔ VPN با یادداشت شفاف نادیده گرفته می‌شود
 
-## 📄 مجوز
+### سؤالات رایج
+
+**ماژول VPN چی شد؟**
+نسخه‌های 2.0.x ماژول اختیاری 100riVPN (VPN داخلی فایرفاکس) داشتند. یک افزونهٔ مرورگر نمی‌تواند خودش تونل را باز کند (CONNECT با توکن Bearer در جاوااسکریپت ممنوع است)، بنابراین ماژول در v2.1.0 کامل حذف شد تا ابزار ساده و تک‌منظوره باشد. توکن‌های باقی‌مانده در اولین اجرا پاک می‌شوند؛ بکاپ‌های قدیمی سالم باز می‌شوند.
+
+**کدام مرورگرها؟**
+Chrome 111+، Edge (هر دو MV3) و Firefox 115+ (MV2) — با سه بیلد جدا در همان بسته.
+
+**داده‌ای جمع می‌شود؟**
+خیر. بدون تحلیل، بدون حساب کاربری، بدون سرور. تنها درخواست شبکه‌ای (اختیاری و با دست خودتان) تست اتصال به `gstatic.com` / `cp.cloudflare.com` است. جزئیات: [PRIVACY.md](PRIVACY.md)
+
+### ساختار پروژه
+
+```
+├─ src/
+│  ├─ background/    chromium.js (MV3 service worker) · firefox.js (MV2)
+│  ├─ popup/         پاپ‌آپ ۳۵۶px
+│  ├─ options/       داشبورد · پروفایل‌ها · سوییچ خودکار · بکاپ · تنظیمات · درباره
+│  ├─ common/        storage · matcher/PAC · themes · i18n · defaults · constants
+│  ├─ manifests/     chrome.json · firefox.json
+│  ├─ assets/        فونت وزیرمتن · آیکون‌ها
+│  └─ _locales/      fa · en
+├─ test/            logic_test.js · background_smoke_test.js  (node)
+├─ scripts/         build.py · gen_icons.py · check_i18n.py  (پایتون استاندارد)
+├─ screenshots/     گالری این README
+└─ .github/         CI · Release
+```
+
+### مشارکت
+
+[CONTRIBUTING.md](CONTRIBUTING.md) را ببینید — Pull request خوش‌آمد است؛ تست‌ها را سبز نگه دارید و متن‌ها را جفت دو زبان اضافه کنید.
+
+### سپاس‌گزاری
+
+- [ZeroOmega](https://github.com/zero-peak/ZeroOmega) و [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) — الهام‌بخش این پروژه
+- [Vazirmatn](https://github.com/rastikerdar/vazirmatn) — فونت فارسی ([راستی‌کردار](https://github.com/rastikerdar))
+
+### مجوز
 
 [MIT](LICENSE) — آزاد برای استفاده، تغییر و انتشار.
 
+</div>
+
 ---
 
-<div dir="ltr" align="center">
+## English
 
-## ⚡ ProxyFaMega (English)
+**ProxyFaMega** is a browser proxy-profile manager: Persian-first, fully RTL, bilingual (Persian/English), with a compact iOS-style UI — and zero telemetry. A simpler, faster alternative to SwitchyOmega / ZeroOmega that ships ready-made profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Tor, Psiphon… and routes your browser traffic to your own local proxy client.
 
-A modern, iOS-inspired proxy manager for your browser — Persian-first (RTL), bilingual (FA/EN), with 8 gorgeous themes, auto dark mode, Vazirmatn font, 10 ready-made profiles (Hiddify 12334, v2rayN 10808, NekoBox 2080, Happ, Clash 7890…), smart auto-switch rules with a live URL tester and a one-click "Iran direct" preset, professional backup (AES-256 encryption, auto snapshots, ZeroOmega/SwitchyOmega import), every setting documented with examples, keyboard shortcuts, autosave and zero telemetry.
+> **v2.1.0 — final:** the optional 100riVPN module from 2.0.x was removed entirely; ProxyFaMega is now a single-purpose proxy manager. Legacy tokens are wiped on first run and old backups open cleanly (the VPN part is skipped). Details: [CHANGELOG](CHANGELOG.md)
 
-**Build:** `python3 scripts/build.py` → Chrome (MV3), Edge (MV3) & Firefox (MV2) packages in `dist/`.
+### Gallery
 
-</div>
+<p align="center"><img src="screenshots/13-dashboard-en-light.png" width="49%" alt="Dashboard"><img src="screenshots/16-profile-editor-en.png" width="49%" alt="Profile editor"></p>
+<p align="center"><img src="screenshots/17-popup-en-light.png" width="24%" alt="Popup"><img src="screenshots/18-popup-switched-en.png" width="24%" alt="Popup — switched"><img src="screenshots/19-popup-en-dark.png" width="24%" alt="Popup — dark"></p>
+<p align="center"><img src="screenshots/12-profiles-en-light.png" width="49%" alt="Profiles"><img src="screenshots/14-auto-switch-en-light.png" width="49%" alt="Auto switch"></p>
+<p align="center"><img src="screenshots/15-backup-en-light.png" width="49%" alt="Backup"><img src="screenshots/08-settings-en-light.png" width="49%" alt="Settings"></p>
+
+### Features
+
+- **Profiles** — 9 ready-made profiles + unlimited custom ones (SOCKS5 / SOCKS4 / HTTP / HTTPS), connection test, right-click menu, colored status badge
+- **Auto switch** — domain / URL / regex rules with a live tester and 4 one-click presets, including "Iran direct, rest proxied"
+- **Pro backup** — AES-256-GCM encryption, automatic snapshots (up to 10), direct ZeroOmega / SwitchyOmega import, optional cross-device sync through your browser account
+- **Look & feel** — 8 color themes, light/dark/auto appearance (factory default: follow the browser theme), Vazirmatn font in 4 weights, three font sizes
+- **Language** — Persian by default + English, switchable instantly
+- **Shortcuts** — <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> next profile, <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> previous
+- **Privacy** — zero telemetry; everything stays on your device ([PRIVACY.md](PRIVACY.md))
+
+### Ready-made profiles
+
+| App | Port | Protocol |
+|---|---|---|
+| Hiddify | `12334` | SOCKS5 |
+| v2rayN / V2Ray | `10808` | SOCKS5 |
+| v2rayN (HTTP) | `10809` | HTTP |
+| NekoBox / Nekoray | `2080` | SOCKS5 |
+| Happ | `10808` | SOCKS5 |
+| Clash Verge / CFW | `7890` | HTTP |
+| Shadowsocks | `1080` | SOCKS5 |
+| Tor | `9050` | SOCKS5 |
+| Psiphon | `8080` | HTTP |
+
+### Install
+
+The single [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) package (`ProxyFaMega-v2.1.0.zip`) contains `Extention/` with three ready builds + the full `Source/`.
+
+**Chrome / Brave / Edge**
+
+1. Unzip and open `Extention/chrome`
+2. Go to `chrome://extensions`, enable **Developer mode**
+3. **Load unpacked** ← select the `chrome` folder
+
+**Firefox**
+
+1. Go to `about:debugging#/runtime/this-firefox`
+2. **Load Temporary Add-on…** ← pick `manifest.json` inside `Extention/firefox`
+
+> The Edge build follows the same steps at `edge://extensions` with the `edge` folder.
+
+### Build from source
+
+```bash
+git clone https://github.com/100ri-ir/ProxyFaMega.git
+cd ProxyFaMega
+node test/logic_test.js && node test/background_smoke_test.js   # tests
+python3 scripts/build.py                                        # build
+```
+
+Output: `dist/ProxyFaMega-v2.1.0.zip` with `Extention/{chrome,edge,firefox}` + `Source/`.
+Requirements: Python 3.6+ and Node — no external dependencies.
+
+### Preview without installing (demo mode)
+
+Open `src/options/options.html` and `src/popup/popup.html` directly in a browser; the extension runs with sample data:
+
+```
+options.html?view=auto&mode=dark&lang=en
+popup.html?mode=dark&lang=en
+```
+
+### Shortcuts
+
+| Action | Keys |
+|---|---|
+| Next profile | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> |
+| Previous profile | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> |
+
+### Auto switch
+
+- **Domain** (`*.example.com`), **URL** and **regex** rules, priority top-down, each toggleable
+- Live tester: give it any URL and see which rule matches and which route (proxy/direct) applies
+- 4 presets: "Iran direct, rest proxied" (all `*.ir` + 15+ well-known Iranian sites direct), "Google & YouTube only", "Messengers & social", "Route everything"
+- Chromium/Edge use a generated PAC script; Firefox uses `proxy.onRequest`
+
+### Backup & migration
+
+- Full/partial export + AES-256-GCM encryption + automatic snapshots (up to 10) before major changes
+- **Migrating from ZeroOmega / SwitchyOmega**: Backup → Restore, drop the JSON file; profiles and auto-switch rules transfer automatically (merge or replace mode)
+- v2.0.x backups (carrying VPN accounts) open without errors; the VPN data is skipped with a clear note
+
+### FAQ
+
+**What happened to the VPN module?**
+The 2.0.x releases shipped an optional 100riVPN module (Firefox's built-in VPN). A browser extension cannot open the tunnel by itself (JavaScript is not allowed to issue authenticated CONNECT requests), so the module was removed entirely in v2.1.0. Leftover tokens are wiped on first run; old backups still import cleanly.
+
+**Which browsers?**
+Chrome 111+, Edge (both MV3) and Firefox 115+ (MV2) — three separate builds in one package.
+
+**Does it collect data?**
+No. No analytics, no accounts, no servers. The only network request (optional, user-triggered) is the connection test against `gstatic.com` / `cp.cloudflare.com`. Details: [PRIVACY.md](PRIVACY.md)
+
+### Project structure
+
+```
+├─ src/
+│  ├─ background/    chromium.js (MV3 service worker) · firefox.js (MV2)
+│  ├─ popup/          356px popup
+│  ├─ options/        dashboard · profiles · auto-switch · backup · settings · about
+│  ├─ common/         storage · matcher/PAC · themes · i18n · defaults · constants
+│  ├─ manifests/      chrome.json · firefox.json
+│  ├─ assets/         Vazirmatn fonts · icons
+│  └─ _locales/       fa · en
+├─ test/            logic_test.js · background_smoke_test.js  (node)
+├─ scripts/         build.py · gen_icons.py · check_i18n.py  (stdlib python)
+├─ screenshots/     this README's gallery
+└─ .github/         CI · Release
+```
+
+### Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) — pull requests are welcome; keep the tests green and add UI strings in both languages.
+
+### Acknowledgments
+
+- [ZeroOmega](https://github.com/zero-peak/ZeroOmega) and [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) — the inspiration for this project
+- [Vazirmatn](https://github.com/rastikerdar/vazirmatn) — the Persian font by [rastikerdar](https://github.com/rastikerdar)
+
+### License
+
+[MIT](LICENSE) — free to use, modify and redistribute.

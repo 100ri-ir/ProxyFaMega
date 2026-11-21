@@ -17,8 +17,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Run logic tests
-        run: node test/logic_test.js
+      - name: Run tests
+        run: |
+          node test/logic_test.js
+          node test/background_smoke_test.js
+          python3 scripts/check_i18n.py
 
       - name: Build packages
         run: python3 scripts/build.py

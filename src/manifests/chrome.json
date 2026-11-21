@@ -2,10 +2,10 @@
   "manifest_version": 3,
   "name": "ProxyFaMega",
   "short_name": "ProxyFaMega",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "default_locale": "fa",
   "description": "__MSG_extDescription__",
-  "minimum_chrome_version": "102",
+  "minimum_chrome_version": "111",
   "icons": {
     "16": "assets/icons/icon16.png",
     "32": "assets/icons/icon32.png",
@@ -44,11 +44,15 @@
   ],
   "commands": {
     "cycle-next-profile": {
-      "suggested_key": { "default": "Alt+Shift+P" },
+      "suggested_key": {
+        "default": "Alt+Shift+P"
+      },
       "description": "__MSG_cmdNext__"
     },
     "cycle-prev-profile": {
-      "suggested_key": { "default": "Alt+Shift+O" },
+      "suggested_key": {
+        "default": "Alt+Shift+O"
+      },
       "description": "__MSG_cmdPrev__"
     }
   }

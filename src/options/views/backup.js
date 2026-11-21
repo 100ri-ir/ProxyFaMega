@@ -11,7 +11,7 @@ VIEWS.backup = {
     var st = App.state;
 
     /* ================= EXPORT ================= */
-    var scopeSel = UI.el('select', { class: 'select', style: { width: '240px' } });
+    var scopeSel = UI.el('select', { class: 'select', style: { width: '260px' } });
     [['full', T('bk.scopeFull')], ['profiles', T('bk.scopeProfiles')], ['settings', T('bk.scopeSettings')]].forEach(function (x) {
       scopeSel.appendChild(UI.el('option', { value: x[0], text: x[1] }));
     });
@@ -50,7 +50,7 @@ VIEWS.backup = {
       if (scope === 'profiles') data = { profiles: JSON.parse(JSON.stringify(st.profiles)) };
       else if (scope === 'settings') data = { settings: JSON.parse(JSON.stringify(st.settings)) };
       else data = JSON.parse(JSON.stringify(st));
-      return { app: PFM.NAME, format: 'pfm-backup', version: 1, exportedAt: new Date().toISOString(), scope: scope, data: data };
+      return { app: PFM.NAME, format: 'pfm-backup', version: 2, exportedAt: new Date().toISOString(), scope: scope, data: data };
     }
 
     dlBtn.onclick = function () {
@@ -172,7 +172,16 @@ VIEWS.backup = {
         var d = obj.data;
         var profiles = Array.isArray(d.profiles) ? d.profiles : null;
         var hasSettings = !!d.settings;
-        return { kind: 'pfm', label: 'ProxyFaMega', profiles: profiles, settings: hasSettings ? d.settings : null, full: !!(d.profiles && d.settings) && obj.scope === 'full', state: (d.profiles && d.settings && d.autoSwitch) ? d : null };
+        /* obj.arman: v2.0.0 backups carry 100riVPN accounts there — the
+           module is gone in v2.1.0, so the data is acknowledged and skipped
+           (never silently mistaken for something else). */
+        var legacyVpn = !!(obj.arman && (Array.isArray(obj.arman.accounts) || obj.arman.account));
+        return {
+          kind: 'pfm', label: 'ProxyFaMega', profiles: profiles, settings: hasSettings ? d.settings : null,
+          full: !!(d.profiles && d.settings) && obj.scope === 'full',
+          state: (d.profiles && d.settings && d.autoSwitch) ? d : null,
+          vpnOnly: obj.scope === 'vpn', legacyVpn: legacyVpn,
+        };
       }
       /* SwitchyOmega / ZeroOmega options export */
       var soProfiles = [];
@@ -246,6 +255,15 @@ VIEWS.backup = {
         parsed.full || parsed.state ? UI.el('span', { class: 'chip', text: T('bk.fullBackup') }) : null,
       ]));
 
+      /* v2.0.0 backups carried 100riVPN accounts — acknowledge, then skip */
+      if (parsed.legacyVpn) {
+        body.appendChild(UI.el('div', { class: 'hint', html: UI.icon('info', 13) + ' ' + T('bk.vpnIgnored') }));
+      }
+      /* a vpn-only backup has nothing left to apply here */
+      if (parsed.vpnOnly) {
+        body.appendChild(UI.el('div', { class: 'hint', text: T('bk.vpnOnlyNote') }));
+      }
+
       if (parsed.profiles && parsed.profiles.length) {
         var list = UI.el('div', { class: 'import-preview-list' });
         parsed.profiles.forEach(function (p) {
@@ -292,6 +310,11 @@ VIEWS.backup = {
     }
 
     function doImport(parsed, mode) {
+      /* nothing to apply in a vpn-only file */
+      if (parsed.vpnOnly) {
+        UI.toast(T('bk.vpnIgnored'), 'err');
+        return;
+      }
       Store.addSnapshot('import', App.state).then(function () {
         if (mode === 'replace' && parsed.kind === 'pfm' && parsed.state) {
           var fresh = defaultState();
@@ -302,32 +325,32 @@ VIEWS.backup = {
           App.setState(fresh);
         } else {
           App.update(function (s) {
-            if (parsed.profiles) {
-              parsed.profiles.forEach(function (p) {
-                var idx = s.profiles.findIndex(function (x) { return x.name === p.name; });
-                if (idx !== -1) s.profiles[idx] = p;
-                else s.profiles.push(p);
-              });
-            }
-            if (parsed.kind === 'so' && parsed.soRules) {
-              var nameToId = {};
-              s.profiles.forEach(function (p) { nameToId[p.name] = p.id; });
-              (parsed.soRules.rules || []).forEach(function (r) {
-                if (!r || !r.condition) return;
-                var ct = r.condition.conditionType || '';
-                var type = (ct === 'UrlWildcardCondition') ? 'url' : (ct === 'UrlRegexCondition') ? 'regex' : 'domain';
-                var action = (r.profileName === 'direct') ? 'direct' : nameToId[r.profileName];
-                if (!action) return;
-                s.autoSwitch.rules.push({ id: UI.uid('r'), type: type, pattern: r.condition.pattern || '', action: action, enabled: true });
-              });
-            }
-            if (parsed.full && parsed.settings) {
-              s.autoSwitch = parsed.state.autoSwitch || s.autoSwitch;
-            }
-          }, { rerender: false });
-          App.rerender();
-        }
-        UI.toast(T('bk.imported'), 'ok');
+              if (parsed.profiles) {
+                parsed.profiles.forEach(function (p) {
+                  var idx = s.profiles.findIndex(function (x) { return x.name === p.name; });
+                  if (idx !== -1) s.profiles[idx] = p;
+                  else s.profiles.push(p);
+                });
+              }
+              if (parsed.kind === 'so' && parsed.soRules) {
+                var nameToId = {};
+                s.profiles.forEach(function (p) { nameToId[p.name] = p.id; });
+                (parsed.soRules.rules || []).forEach(function (r) {
+                  if (!r || !r.condition) return;
+                  var ct = r.condition.conditionType || '';
+                  var type = (ct === 'UrlWildcardCondition') ? 'url' : (ct === 'UrlRegexCondition') ? 'regex' : 'domain';
+                  var action = (r.profileName === 'direct') ? 'direct' : nameToId[r.profileName];
+                  if (!action) return;
+                  s.autoSwitch.rules.push({ id: UI.uid('r'), type: type, pattern: r.condition.pattern || '', action: action, enabled: true });
+                });
+              }
+              if (parsed.full && parsed.settings) {
+                s.autoSwitch = parsed.state.autoSwitch || s.autoSwitch;
+              }
+            }, { rerender: false });
+            App.rerender();
+          }
+          UI.toast(T('bk.imported'), 'ok');
       });
     }
 

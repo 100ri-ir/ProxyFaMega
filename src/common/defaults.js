@@ -11,7 +11,7 @@ function defaultProfiles() {
     {
       id: 'v2rayn', name: 'v2rayN / V2Ray', protocol: 'socks5', host: '127.0.0.1', port: 10808,
       color: 'g1', icon: '🚀', builtIn: true,
-      desc: { fa: 'پورت SOCKS پیش‌فرض v2rayN و هسته Xray (پورت HTTP: 10809)', en: 'v2rayN / Xray core default SOCKS port (HTTP: 10809)' },
+      desc: { fa: 'پورت SOCKS پیش‌فرض v2rayN و هسته Xray — پورت HTTP آن 10809', en: 'v2rayN / Xray core default SOCKS port (HTTP: 10809)' },
     },
     {
       id: 'v2rayn-http', name: 'v2rayN (HTTP)', protocol: 'http', host: '127.0.0.1', port: 10809,
@@ -21,22 +21,17 @@ function defaultProfiles() {
     {
       id: 'nekobox', name: 'NekoBox / Nekoray', protocol: 'socks5', host: '127.0.0.1', port: 2080,
       color: 'g4', icon: '🐱', builtIn: true,
-      desc: { fa: 'پورت Mixed پیش‌فرض نکوباکس و نکورِی (SOCKS5 + HTTP)', en: 'NekoBox / Nekoray default mixed port' },
+      desc: { fa: 'پورت Mixed پیش‌فرض نکوباکس و نکورِی — SOCKS5 و HTTP روی یک پورت', en: 'NekoBox / Nekoray default mixed port' },
     },
     {
       id: 'happ', name: 'Happ', protocol: 'socks5', host: '127.0.0.1', port: 10808,
       color: 'g6', icon: '😻', builtIn: true,
-      desc: { fa: 'پورت‌های پیش‌فرض Happ (SOCKS: 10808 — HTTP: 10809)', en: 'Happ default ports (SOCKS: 10808 — HTTP: 10809)' },
+      desc: { fa: 'پورت‌های پیش‌فرض Happ — SOCKS روی 10808 و HTTP روی 10809', en: 'Happ default ports (SOCKS: 10808 — HTTP: 10809)' },
     },
     {
       id: 'clash', name: 'Clash Verge / CFW', protocol: 'http', host: '127.0.0.1', port: 7890,
       color: 'g10', icon: '🌊', builtIn: true,
-      desc: { fa: 'پورت Mixed پیش‌فرض خانواده Clash (HTTP و SOCKS5)', en: 'Clash family default mixed port' },
-    },
-    {
-      id: 'firefox', name: 'Firefox Proxy', protocol: 'socks5', host: '127.0.0.1', port: 10810,
-      color: 'g3', icon: '🦊', builtIn: true,
-      desc: { fa: 'پورت 10810 — پروفایل سفارشی؛ در صورت نیاز ویرایشش کنید', en: 'Port 10810 — custom profile, edit as needed' },
+      desc: { fa: 'پورت Mixed پیش‌فرض خانواده Clash — HTTP و SOCKS5', en: 'Clash family default mixed port' },
     },
     {
       id: 'shadowsocks', name: 'Shadowsocks', protocol: 'socks5', host: '127.0.0.1', port: 1080,
@@ -51,7 +46,7 @@ function defaultProfiles() {
     {
       id: 'psiphon', name: 'Psiphon', protocol: 'http', host: '127.0.0.1', port: 8080,
       color: 'g8', icon: '🐦', builtIn: true,
-      desc: { fa: 'پورت HTTP محلی Psiphon (SOCKS: 1080) — در نسخه‌های جدید ممکن است تصادفی باشد', en: 'Psiphon local HTTP port (SOCKS: 1080)' },
+      desc: { fa: 'پورت HTTP محلی Psiphon — SOCKS روی 1080؛ در نسخه‌های جدید ممکن است تصادفی باشد', en: 'Psiphon local HTTP port (SOCKS: 1080)' },
     },
   ];
 }
@@ -124,7 +119,7 @@ function defaultSettings() {
   return {
     lang: 'fa',
     themeId: 'aurora',
-    appearance: 'auto',          /* auto | light | dark */
+    appearance: 'auto',          /* auto = follow the browser (factory default) | light | dark */
     fontSize: 'md',              /* sm | md | lg */
     badge: true,
     notifications: true,

@@ -6,7 +6,8 @@ importScripts(
   'common/i18n.js',
   'common/defaults.js',
   'common/matcher.js',
-  'common/storage.js'
+  'common/storage.js',
+  'common/theme.js'
 );
 
 var state = null;
@@ -184,6 +185,23 @@ function testLatency() {
   });
 }
 
+/* ---------------- legacy VPN data cleanup ----------------
+   v2.0.0 (the 100riVPN module) kept Firefox-account tokens under the
+   'pfm:arman' storage key. The module is gone in v2.1.0, and stale OAuth
+   tokens must not linger in storage: they are removed once, on every
+   browser start and on update. */
+function purgeLegacyVpnData() {
+  try {
+    chrome.storage.local.get(['pfm:arman'], function (res) {
+      if (chrome.runtime.lastError) return;
+      if (res && res['pfm:arman'] !== undefined) {
+        chrome.storage.local.remove('pfm:arman', function () { chrome.runtime.lastError; });
+        log('removed legacy VPN data (pfm:arman)');
+      }
+    });
+  } catch (e) { /* ignore */ }
+}
+
 /* ---------------- events ---------------- */
 chrome.runtime.onInstalled.addListener(function (details) {
   reloadState().then(function (st) {
@@ -194,15 +212,22 @@ chrome.runtime.onInstalled.addListener(function (details) {
     } else {
       applyAll();
     }
+    purgeLegacyVpnData();
   });
 });
 
 chrome.runtime.onStartup.addListener(function () {
-  reloadState().then(applyAll);
+  purgeLegacyVpnData();
+  reloadState().then(function (st) {
+    applyAll();
+  });
 });
 
 Store.onChanged(function () {
-  reloadState().then(applyAll);
+  reloadState().then(function (st) {
+    applyAll();
+    if (st && st.settings && st.settings.lang) i18n.setLang(st.settings.lang);
+  });
 });
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
@@ -255,4 +280,7 @@ if (chrome.contextMenus && chrome.contextMenus.onClicked) {
 }
 
 /* first run of the service worker */
-reloadState().then(applyAll).catch(function (e) { log('init error:', e); });
+reloadState().then(function (st) {
+  applyAll();
+  purgeLegacyVpnData();
+}).catch(function (e) { log('init error:', e); });

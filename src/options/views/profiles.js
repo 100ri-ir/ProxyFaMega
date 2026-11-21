@@ -161,7 +161,7 @@ function openProfileEditor(profile) {
 
   var bypassInput = UI.el('textarea', {
     class: 'textarea mono', dir: 'ltr',
-    placeholder: '*.example.com\nlocalhost',
+    placeholder: '*.example.com',
   });
   bypassInput.value = (draft.bypass || []).join('\n');
   var descInput = UI.el('input', { class: 'input', value: i18n.lang() === 'fa' ? (draft.desc && draft.desc.fa || '') : (draft.desc && draft.desc.en || ''), placeholder: T('profiles.phNote') });

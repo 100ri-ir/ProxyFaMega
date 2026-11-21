@@ -171,6 +171,22 @@ function testLatency() {
   });
 }
 
+/* ---------------- legacy VPN data cleanup ----------------
+   v2.0.0 (the 100riVPN module) kept Firefox-account tokens under the
+   'pfm:arman' storage key. The module is gone in v2.1.0, and stale OAuth
+   tokens must not linger in storage: they are removed once, on every
+   browser start and on update. */
+function purgeLegacyVpnData() {
+  try {
+    api.storage.local.get(['pfm:arman']).then(function (res) {
+      if (res && res['pfm:arman'] !== undefined) {
+        api.storage.local.remove('pfm:arman');
+        log('removed legacy VPN data (pfm:arman)');
+      }
+    }).catch(function () { /* ignore */ });
+  } catch (e) { /* ignore */ }
+}
+
 /* ---------------- events ---------------- */
 api.runtime.onInstalled.addListener(function (details) {
   reloadState().then(function (st) {
@@ -181,15 +197,22 @@ api.runtime.onInstalled.addListener(function (details) {
     } else {
       applyAll();
     }
+    purgeLegacyVpnData();
   });
 });
 
 api.runtime.onStartup.addListener(function () {
-  reloadState().then(applyAll);
+  purgeLegacyVpnData();
+  reloadState().then(function (st) {
+    applyAll();
+  });
 });
 
 Store.onChanged(function () {
-  reloadState().then(applyAll);
+  reloadState().then(function (st) {
+    applyAll();
+    if (st && st.settings && st.settings.lang) i18n.setLang(st.settings.lang);
+  });
 });
 
 api.runtime.onMessage.addListener(function (msg, sender) {
@@ -243,4 +266,7 @@ if (api.contextMenus && api.contextMenus.onClicked) {
 }
 
 /* event-page startup */
-reloadState().then(applyAll).catch(function (e) { log('init error:', e); });
+reloadState().then(function (st) {
+  applyAll();
+  purgeLegacyVpnData();
+}).catch(function (e) { log('init error:', e); });

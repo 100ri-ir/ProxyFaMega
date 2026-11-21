@@ -140,7 +140,7 @@ var i18n = (function () {
     'set.langExample': ['مثال: فارسی (پیش‌فرض) یا English', 'e.g. Persian (default) or English'],
     'set.langDone': ['زبان تغییر کرد', 'Language changed'],
     'set.appearance': ['حالت نمایش', 'Appearance'],
-    'set.appearanceDesc2': ['خودکار با سیستم‌عامل هماهنگ می‌شود؛ یا ثابت روی روشن/تاریک بگذارید.', '"Auto" follows your OS; or pin light/dark.'],
+    'set.appearanceDesc2': ['خودکار با تم مرورگر/سیستم‌عامل هماهنگ می‌شود (پیش‌فرض فابریک)؛ یا ثابت روی روشن/تاریک بگذارید.', '"Auto" follows the browser/OS theme (the factory default); or pin light/dark.'],
     'set.appearanceExample': ['مثال: شب‌ها تاریک، روزها روشن', 'e.g. dark at night, light by day'],
     'set.app.auto': ['خودکار', 'Auto'],
     'set.app.light': ['روشن', 'Light'],
@@ -194,9 +194,9 @@ var i18n = (function () {
 
     /* ---------- backup ---------- */
     'bk.exportTitle': ['خروجی گرفتن', 'Export'],
-    'bk.exportDesc': ['از همه‌چیز (یا فقط پروفایل‌ها/تنظیمات) فایل پشتیبان بسازید. با رمز، خروجی AES-256 رمزدار می‌شود.', 'Create a backup of everything (or profiles/settings only). With a password it is AES-256 encrypted.'],
+    'bk.exportDesc': ['از همه‌چیز یا فقط پروفایل‌ها/تنظیمات فایل پشتیبان بسازید. با رمز، خروجی AES-256 رمزدار می‌شود.', 'Create a backup of everything or just profiles/settings. With a password it is AES-256 encrypted.'],
     'bk.scope': ['محدوده', 'Scope'],
-    'bk.scopeFull': ['همه‌چیز (کامل)', 'Everything (full)'],
+    'bk.scopeFull': ['همه‌چیز (پروفایل‌ها + تنظیمات + قوانین)', 'Everything (profiles + settings + rules)'],
     'bk.scopeProfiles': ['فقط پروفایل‌ها', 'Profiles only'],
     'bk.scopeSettings': ['فقط تنظیمات', 'Settings only'],
     'bk.passPh': ['رمز اختیاری برای رمزداری…', 'Optional password to encrypt…'],
@@ -242,10 +242,10 @@ var i18n = (function () {
 
     /* ---------- about ---------- */
     'about.features': ['چه چیزهایی دارد؟', 'What is inside?'],
-    'about.f1': ['۱۰ پروفایل آماده برای Hiddify، v2rayN، NekoBox، Happ، Clash، Tor، Psiphon و…', '10 ready profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Tor, Psiphon…'],
+    'about.f1': ['۹ پروفایل آماده برای Hiddify، v2rayN، NekoBox، Happ، Clash، Tor، Psiphon و…', '9 ready profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Tor, Psiphon…'],
     'about.f2': ['سوییچ خودکار هوشمند با قوانین دامنه/آدرس/Regex و پیش‌تنظیم «ایران مستقیم»', 'Smart auto-switch with domain/URL/regex rules and the "Iran direct" preset'],
-    'about.f3': ['۸ تم رنگی iOS-سبک + حالت شب خودکار + فونت وزیرمتن', '8 iOS-style themes + auto dark mode + Vazirmatn font'],
-    'about.f4': ['بکاپ حرفه‌ای: رمزداری AES-256، اسنپ‌شات خودکار و درون‌ریزی از ZeroOmega', 'Pro backup: AES-256 encryption, auto snapshots, ZeroOmega import'],
+    'about.f3': ['۸ تم رنگی iPhone-سبک + حالت شب خودکار (تبعیت از تم مرورگر) + فونت وزیرمتن', '8 iPhone-style themes + auto dark mode (follows the browser theme) + Vazirmatn font'],
+    'about.f4': ['بکاپ حرفه‌ای: رمزداری AES-256، اسنپ‌شات خودکار و درون‌ریزی ZeroOmega/SwitchyOmega', 'Pro backup: AES-256 encryption, auto snapshots, ZeroOmega/SwitchyOmega import'],
     'about.f5': ['ذخیره خودکار همه تغییرات + همگام‌سازی اختیاری بین دستگاه‌ها', 'Autosave for every change + optional cross-device sync'],
     'about.f6': ['میان‌بر صفحه‌کلید، منوی راست‌کلیک و تست سرعت اتصال', 'Keyboard shortcuts, right-click menu, connection test'],
     'about.f7': ['بدون هیچ جمع‌آوری داده — همه‌چیز فقط روی دستگاه شما', 'Zero data collection — everything stays on your device'],
@@ -255,6 +255,10 @@ var i18n = (function () {
     'about.privacyDesc': ['هیچ داده‌ای به هیچ سروری ارسال نمی‌شود. پروفایل‌ها و تنظیمات فقط در حافظه داخلی مرورگر (و در صورت فعال‌سازی، در حساب همگام‌ساز خودتان) ذخیره می‌شوند.', 'No data is ever sent to any server. Profiles and settings live only in your browser storage (and your own sync account if enabled).'],
     'about.license': ['مجوز', 'License'],
     'about.licenseDesc': ['منتشرشده با مجوز MIT — آزاد برای استفاده، تغییر و انتشار. کد منبع برای انتشار در گیت‌هاب آماده است.', 'Released under the MIT license — free to use, change and publish. Source is ready for GitHub.'],
+
+    /* ---------- settings ---------- */
+    'set.secGeneral': ['تنظیمات کلی (پروکسی‌فامگا)', 'General (ProxyFaMega)'],
+
   };
 
   function t(key, vars) {
@@ -291,6 +295,11 @@ var i18n = (function () {
       if (kb >= 1024) return i18n.fmtNum(Math.round(kb / 10.24) / 100) + ' MB';
       return i18n.fmtNum(Math.max(1, Math.round(kb))) + ' KB';
     },
+    /* v2.0.0 backups may carry 100riVPN accounts — the module was removed in
+       v2.1.0, so the data is acknowledged and skipped, never applied. */
+    'bk.vpnIgnored': ['این فایل حاوی حساب‌های 100riVPN نسخهٔ قدیمی است — این نسخه ماژول VPN ندارد و آن داده‌ها نادیده گرفته می‌شود', 'This file carries 100riVPN accounts from an older version — this build has no VPN module, so that data is skipped'],
+    'bk.vpnOnlyNote': ['این فایل فقط حساب‌های VPN را شامل می‌شود؛ چیز دیگری برای بازیابی ندارد.', 'This file contains VPN accounts only; there is nothing else to restore.'],
+
   };
 })();
 

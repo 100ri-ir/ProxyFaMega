@@ -59,6 +59,7 @@ var UI = (function () {
     chevronDown: '<path d="m6 10 6 6 6-6"/>',
     refresh: '<path d="M20 5v5h-5"/><path d="M4 19v-5h5"/><path d="M19.5 10A8 8 0 0 0 6 6.5L4 8.5M4.5 14a8 8 0 0 0 13.5 3.5l2-2"/>',
     shield: '<path d="M12 2.5 20 6v5.5c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z"/>',
+    users: '<circle cx="9" cy="8.2" r="3.4"/><path d="M3.2 19.5c.7-3.2 3-4.9 5.8-4.9s5.1 1.7 5.8 4.9"/><path d="M15.5 5.2a3.4 3.4 0 0 1 0 6.5M17.6 14.9c2 .7 3.3 2.2 3.7 4.6"/>',
     alert: '<path d="M12 3 2.5 20h19z"/><path d="M12 9.5v5M12 17.6v.4"/>',
     keyboard: '<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6.5 10h.4M10.2 10h.4M13.9 10h.4M17.6 10h.4M7.5 14h9"/>',
     cloud: '<path d="M17.5 18a4.5 4.5 0 0 0 .4-9A6 6 0 0 0 6.3 10.5 4 4 0 0 0 7 18z"/>',

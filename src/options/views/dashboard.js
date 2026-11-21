@@ -49,7 +49,7 @@ VIEWS.dashboard = {
 
     var lastBackup = st.lastBackupAt ? i18n.fmtDate(st.lastBackupAt) : T('common.never');
     var stats = UI.el('section', { class: 'card stats-card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 16) + '<span></span>' }),
       UI.el('div', { class: 'stat-chips' }, [
         statChip(String(st.profiles.length), T('dash.profilesCount')),
         statChip(String((st.autoSwitch.rules || []).filter(function (r) { return r.enabled; }).length), T('dash.rulesCount')),
@@ -60,7 +60,7 @@ VIEWS.dashboard = {
 
     /* ---- quick profiles ---- */
     var quick = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('zap', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('zap', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('dash.quickDesc') }),
       UI.el('div', { class: 'quick-grid' }),
     ]);
@@ -69,7 +69,7 @@ VIEWS.dashboard = {
     if (!st.profiles.length) {
       qgrid.appendChild(UI.el('div', { class: 'muted', text: T('popup.noProfiles') }));
     }
-    st.profiles.slice(0, 8).forEach(function (p) {
+    st.profiles.slice(0, 9).forEach(function (p) {
       var on = st.applied && st.mode === 'profile' && st.currentProfileId === p.id;
       var b = UI.el('button', { class: 'qp' + (on ? ' on' : '') }, [
         UI.el('span', { class: 'avatar sm', style: { background: gradCss(p.color) }, text: p.icon || '🌐' }),
@@ -87,7 +87,7 @@ VIEWS.dashboard = {
     var latBtn = UI.el('button', { class: 'btn btn-primary', html: UI.icon('zap', 15) + '<span></span>' });
     latBtn.querySelector('span').textContent = T('dash.testNow');
     var lat = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('globe', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('globe', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('dash.testDesc') }),
       UI.el('div', { class: 'lat-row' }, [latBtn, latValue, UI.el('span', { class: 'muted', style: { fontSize: '0.72rem' }, text: T('dash.testNote') })]),
     ]);
@@ -110,7 +110,7 @@ VIEWS.dashboard = {
 
     /* ---- tips ---- */
     var tips = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 16) + '<span></span>' }),
       UI.el('div', { class: 'tips-list' },
         ['dash.tip1', 'dash.tip2', 'dash.tip3'].map(function (k) {
           return UI.el('div', { class: 'tip' }, [
@@ -122,7 +122,7 @@ VIEWS.dashboard = {
     tips.querySelector('.card-title span').textContent = T('dash.tipsTitle');
 
     var grid = UI.el('div', { class: 'dash-grid stagger' }, [hero, stats]);
-    var wrap = UI.el('div', { class: 'col', style: { gap: '18px' } });
+    var wrap = UI.el('div', { class: 'col', style: { gap: '12px' } });
     wrap.appendChild(grid);
     wrap.appendChild(quick);
     var row2 = UI.el('div', { class: 'dash-grid' });

@@ -11,12 +11,12 @@ window.App = {
 
 (function () {
   var NAV_ITEMS = [
-    { id: 'dashboard', icon: 'home', key: 'nav.dashboard' },
-    { id: 'profiles', icon: 'layers', key: 'nav.profiles' },
-    { id: 'auto', icon: 'shuffle', key: 'nav.auto' },
-    { id: 'settings', icon: 'gear', key: 'nav.settings' },
-    { id: 'backup', icon: 'database', key: 'nav.backup' },
-    { id: 'about', icon: 'info', key: 'nav.about' },
+    { id: 'dashboard', icon: 'home', key: 'nav.dashboard', g: 'g2' },
+    { id: 'profiles', icon: 'layers', key: 'nav.profiles', g: 'g1' },
+    { id: 'auto', icon: 'shuffle', key: 'nav.auto', g: 'g10' },
+    { id: 'settings', icon: 'gear', key: 'nav.settings', g: 'g8' },
+    { id: 'backup', icon: 'database', key: 'nav.backup', g: 'g11' },
+    { id: 'about', icon: 'info', key: 'nav.about', g: 'g12' },
   ];
 
   /* ---------------- save indicator ---------------- */
@@ -94,10 +94,11 @@ window.App = {
     NAV_ITEMS.forEach(function (item) {
       var b = document.createElement('button');
       b.className = 'nav-item' + (App.route === item.id ? ' on' : '');
-      b.innerHTML = UI.icon(item.icon, 19);
-      var span = document.createElement('span');
-      span.textContent = i18n.t(item.key);
-      b.appendChild(span);
+      b.innerHTML =
+        '<span class="n-tile" style="background:' + gradCss(item.g || 'g4') + '">' + UI.icon(item.icon, 14) + '</span>' +
+        '<span class="n-label"></span>';
+      var label = b.querySelector('.n-label');
+      label.textContent = i18n.t(item.key);
       b.onclick = function () { goto(item.id); };
       nav.appendChild(b);
     });

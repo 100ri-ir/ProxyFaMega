@@ -1,4 +1,4 @@
-/* ProxyFaMega — settings view (every option documented with example) */
+/* ProxyFaMega — settings view (general proxy settings) */
 'use strict';
 
 window.VIEWS = window.VIEWS || {};
@@ -23,22 +23,29 @@ VIEWS.settings = {
       ]);
     }
 
-    function toggle(getVal, setKey) {
-      return UI.el('label', { class: 'toggle' }, [
-        UI.el('input', { type: 'checkbox', checked: !!getVal() }),
-        UI.el('span', { class: 'track' }),
+    /* iOS-style grouped-list section header */
+    function secHead(iconName, title, grad, chipText) {
+      return UI.el('div', { class: 'sec-head' }, [
+        UI.el('span', { class: 's-ico', style: { background: gradCss(grad) }, html: UI.icon(iconName, 14) }),
+        UI.el('span', { text: title }),
+        chipText ? UI.el('span', { class: 'chip s-chip', text: chipText }) : null,
       ]);
     }
 
-    /* ============ appearance ============ */
+    /* ================================================================
+       SECTION 1 — ProxyFaMega (general)
+       ================================================================ */
+    root.appendChild(secHead('gear', T('set.secGeneral'), 'g1'));
+
+    /* ---- appearance & language ---- */
     var appCard = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('set.appearanceDesc') }),
     ]);
     appCard.querySelector('.card-title span').textContent = T('set.appearanceTitle');
 
     /* language */
-    var langSeg = UI.el('div', { class: 'seg', style: { minWidth: '190px' } });
+    var langSeg = UI.el('div', { class: 'seg', style: { minWidth: '168px' } });
     [['fa', 'فارسی'], ['en', 'English']].forEach(function (x) {
       var b = UI.el('button', { text: x[1], class: s.lang === x[0] ? 'on' : '' });
       b.onclick = function () {
@@ -58,10 +65,10 @@ VIEWS.settings = {
       ctrl: langSeg,
     }));
 
-    /* appearance mode */
-    var appSeg = UI.el('div', { class: 'seg', style: { minWidth: '190px' } });
+    /* appearance mode — auto follows the browser (the factory default) */
+    var appSeg = UI.el('div', { class: 'seg', style: { minWidth: '168px' } });
     [['auto', 'monitor'], ['light', 'sun'], ['dark', 'moon']].forEach(function (x) {
-      var b = UI.el('button', { class: s.appearance === x[0] ? 'on' : '', html: UI.icon(x[1], 13) + '<span></span>' });
+      var b = UI.el('button', { class: s.appearance === x[0] ? 'on' : '', html: UI.icon(x[1], 12) + '<span></span>' });
       b.querySelector('span').textContent = T('set.app.' + x[0]);
       b.onclick = function () {
         App.update(function (stx) { stx.settings.appearance = x[0]; }, { rerender: false });
@@ -78,7 +85,7 @@ VIEWS.settings = {
     }));
 
     /* font size */
-    var fsSeg = UI.el('div', { class: 'seg', style: { minWidth: '190px' } });
+    var fsSeg = UI.el('div', { class: 'seg', style: { minWidth: '168px' } });
     [['sm', 'set.fs.sm'], ['md', 'set.fs.md'], ['lg', 'set.fs.lg']].forEach(function (x) {
       var b = UI.el('button', { text: T(x[1]), class: s.fontSize === x[0] ? 'on' : '' });
       b.onclick = function () {
@@ -94,10 +101,11 @@ VIEWS.settings = {
       example: T('set.fontSizeExample'),
       ctrl: fsSeg,
     }));
+    root.appendChild(appCard);
 
-    /* theme gallery */
+    /* ---- color theme gallery ---- */
     var themeCard = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('sparkle', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('set.themeDesc') }),
       UI.el('div', { class: 'theme-gallery' }),
     ]);
@@ -107,7 +115,7 @@ VIEWS.settings = {
       var c = UI.el('button', { class: 'theme-card' + (s.themeId === th.id ? ' on' : '') }, [
         UI.el('div', { class: 't-grad', style: { background: 'linear-gradient(135deg,' + th.colors[0] + ',' + th.colors[1] + ',' + th.colors[2] + ')' } }),
         UI.el('div', { class: 't-name', text: i18n.lang() === 'fa' ? th.fa : th.en }),
-        UI.el('span', { class: 't-check', html: UI.icon('check', 13) }),
+        UI.el('span', { class: 't-check', html: UI.icon('check', 12) }),
       ]);
       c.onclick = function () {
         App.update(function (stx) { stx.settings.themeId = th.id; }, { rerender: false });
@@ -117,10 +125,11 @@ VIEWS.settings = {
       };
       gallery.appendChild(c);
     });
+    root.appendChild(themeCard);
 
-    /* ============ behavior ============ */
+    /* ---- behavior ---- */
     var behCard = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('gear', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('gear', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('set.behaviorDesc') }),
     ]);
     behCard.querySelector('.card-title span').textContent = T('set.behaviorTitle');
@@ -173,11 +182,12 @@ VIEWS.settings = {
       example: T('set.syncExample'),
       ctrl: syncTog,
     }));
+    root.appendChild(behCard);
 
-    /* ============ shortcuts ============ */
+    /* ---- shortcuts ---- */
     var isFirefox = navigator.userAgent.indexOf('Firefox') !== -1;
     var kbdCard = UI.el('section', { class: 'card' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('keyboard', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('keyboard', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('set.kbdDesc') }),
       UI.el('table', { class: 'kbd-table' }, [
         UI.el('tr', {}, [
@@ -189,25 +199,26 @@ VIEWS.settings = {
           UI.el('td', { html: '<kbd>Alt + Shift + O</kbd>' }),
         ]),
       ]),
-      UI.el('div', { class: 'row', style: { marginTop: '12px' } }, [
+      UI.el('div', { class: 'row', style: { marginTop: '9px' } }, [
         UI.el('span', { class: 'chip', text: isFirefox ? 'about:addons' : 'chrome://extensions/shortcuts' }),
-        UI.el('button', { class: 'btn btn-sm', html: UI.icon('copy', 13) + '<span></span>', onclick: function (e) {
+        UI.el('button', { class: 'btn btn-sm', html: UI.icon('copy', 12) + '<span></span>', onclick: function (e) {
           UI.copyText(isFirefox ? 'about:addons' : 'chrome://extensions/shortcuts').then(function () {
             UI.toast(T('set.copied'), 'ok');
           });
         } }),
-        UI.el('span', { class: 'muted', style: { fontSize: '0.72rem' }, text: T('set.kbdWhere') }),
+        UI.el('span', { class: 'muted', style: { fontSize: '0.68rem' }, text: T('set.kbdWhere') }),
       ]),
     ]);
     kbdCard.querySelector('.card-title span').textContent = T('set.kbdTitle');
     kbdCard.querySelector('.btn span').textContent = T('common.copy');
+    root.appendChild(kbdCard);
 
-    /* ============ danger zone ============ */
+    /* ---- danger zone ---- */
     var danger = UI.el('section', { class: 'card danger-zone' }, [
-      UI.el('div', { class: 'card-title', html: UI.icon('alert', 18) + '<span></span>' }),
+      UI.el('div', { class: 'card-title', html: UI.icon('alert', 16) + '<span></span>' }),
       UI.el('div', { class: 'card-desc', text: T('set.dangerDesc') }),
       UI.el('div', { class: 'row' }, [
-        UI.el('button', { class: 'btn btn-danger', html: UI.icon('refresh', 14) + '<span></span>', onclick: function () {
+        UI.el('button', { class: 'btn btn-danger', html: UI.icon('refresh', 13) + '<span></span>', onclick: function () {
           UI.confirmModal({
             title: T('set.resetAll'),
             message: T('set.resetConfirm'),
@@ -230,11 +241,6 @@ VIEWS.settings = {
     ]);
     danger.querySelector('.card-title span').textContent = T('set.dangerTitle');
     danger.querySelector('.btn span').textContent = T('set.resetAll');
-
-    root.appendChild(appCard);
-    root.appendChild(themeCard);
-    root.appendChild(behCard);
-    root.appendChild(kbdCard);
     root.appendChild(danger);
   },
 };

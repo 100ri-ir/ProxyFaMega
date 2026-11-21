@@ -3,7 +3,7 @@
 
 var PFM = {
   NAME: 'ProxyFaMega',
-  VERSION: '1.0.0',
+  VERSION: '2.1.0',
   KEY_STATE: 'pfm:state',
   KEY_SNAPSHOTS: 'pfm:snapshots',
   SITE: 'https://github.com/zero-peak/ZeroOmega', // replaced by your repo URL on publish
