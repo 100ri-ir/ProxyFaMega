@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "ProxyFaMega",
   "short_name": "ProxyFaMega",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "default_locale": "fa",
   "description": "__MSG_extDescription__",
   "browser_specific_settings": {

@@ -4,7 +4,7 @@
 
 **ProxyFaMega** — مدیریت پروفایل‌های پروکسی مرورگر | Persian-first bilingual proxy profile manager
 
-![version](https://img.shields.io/badge/version-2.1.0-8B5CF6) ![license](https://img.shields.io/badge/license-MIT-22C55E) ![browsers](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6) ![CI](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/ci.yml/badge.svg) ![telemetry](https://img.shields.io/badge/telemetry-none-0F766E)
+![version](https://img.shields.io/badge/version-2.2.0-8B5CF6) ![license](https://img.shields.io/badge/license-MIT-22C55E) ![browsers](https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-3B82F6) ![CI](https://github.com/100ri-ir/ProxyFaMega/actions/workflows/ci.yml/badge.svg) ![telemetry](https://img.shields.io/badge/telemetry-none-0F766E)
 
 **فارسی** · [English ↓](#english)
 
@@ -18,7 +18,9 @@
 
 **ProxyFaMega** یک مدیر پروفایل پروکسی برای مرورگر است: فارسی‌محور و راست‌به‌چپ، دوزبانه (فارسی/انگلیسی)، با رابط کاربری جمع‌وجور به سبک iOS — و بدون هیچ جمع‌آوری داده. جایگزینی ساده‌تر و سریع‌تر برای SwitchyOmega / ZeroOmega که با پروفایل‌های آمادهٔ Hiddify، v2rayN، NekoBox، Happ، Clash، Tor، Psiphon و… کار می‌کند و ترافیک را به کلاینت محلی شما می‌فرستد.
 
-> **v2.1.0 — نسخهٔ نهایی:** ماژول 100riVPN که در 2.0.x وجود داشت به‌طور کامل حذف شد؛ ProxyFaMega حالا یک ابزار تک‌منظورهٔ مدیریت پروکسی است. توکن‌های قدیمی در اولین اجرا خودکار پاک می‌شوند و بکاپ‌های قدیمی بدون خطا باز می‌شوند (بخش VPN نادیده گرفته می‌شود). جزئیات: [CHANGELOG](CHANGELOG.md)
+> **v2.2.0 — پروفایل Firefox برگشت:** پروفایل همیشگی «Firefox» (SOCKS5 `127.0.0.1:10810`) دوباره در فهرست آماده است — یک پروفایل معمولی بدون هیچ ماژول VPN؛ هر کلاینت محلی که روی پورت 10810 گوش بدهد، مرورگر را از آن عبور می‌دهد.
+>
+> **v2.1.0 — نسخهٔ نهایی بدون VPN:** ماژول 100riVPN که در 2.0.x وجود داشت به‌طور کامل حذف شد؛ ProxyFaMega حالا یک ابزار تک‌منظورهٔ مدیریت پروکسی است. توکن‌های قدیمی در اولین اجرا خودکار پاک می‌شوند و بکاپ‌های قدیمی بدون خطا باز می‌شوند (بخش VPN نادیده گرفته می‌شود). جزئیات: [CHANGELOG](CHANGELOG.md)
 
 ### گالری
 
@@ -30,7 +32,7 @@
 
 ### امکانات
 
-- **پروفایل‌ها** — ۹ پروفایل آماده + هر تعداد پروفایل دلخواه (SOCKS5 / SOCKS4 / HTTP / HTTPS)، تست اتصال، منوی راست‌کلیک، نشان رنگی وضعیت روی آیکون
+- **پروفایل‌ها** — ۱۰ پروفایل آماده + هر تعداد پروفایل دلخواه (SOCKS5 / SOCKS4 / HTTP / HTTPS)، تست اتصال، منوی راست‌کلیک، نشان رنگی وضعیت روی آیکون
 - **سوییچ خودکار** — قوانین دامنه / URL / Regex با تست‌کنندهٔ زنده و ۴ پیش‌تنظیم یک‌کلیکی، از جمله «ایران مستقیم، بقیه با پروکسی»
 - **بکاپ حرفه‌ای** — رمزداری AES-256-GCM، اسنپ‌شات خودکار تا ۱۰ نسخه، درون‌ریزی مستقیم از ZeroOmega / SwitchyOmega، همگام‌سازی اختیاری بین دستگاه‌ها از طریق حساب مرورگر
 - **ظاهر** — ۸ تم رنگی، حالت روشن/تاریک/خودکار (پیش‌فرض کارخانه: تبعیت از تم مرورگر)، فونت وزیرمتن در ۴ وزن، سه اندازهٔ فونت
@@ -48,13 +50,14 @@
 | NekoBox / Nekoray | `2080` | SOCKS5 |
 | Happ | `10808` | SOCKS5 |
 | Clash Verge / CFW | `7890` | HTTP |
+| Firefox | `10810` | SOCKS5 |
 | Shadowsocks | `1080` | SOCKS5 |
 | Tor | `9050` | SOCKS5 |
 | Psiphon | `8080` | HTTP |
 
 ### نصب
 
-بستهٔ واحد [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) (`ProxyFaMega-v2.1.0.zip`) شامل `Extention/` با سه بیلد آماده + `Source/` کامل است.
+بستهٔ واحد [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) (`ProxyFaMega-v2.2.0.zip`) شامل `Extention/` با سه بیلد آماده + `Source/` کامل است.
 
 **Chrome / Brave / Edge**
 
@@ -78,7 +81,7 @@ node test/logic_test.js && node test/background_smoke_test.js   # تست‌ها
 python3 scripts/build.py                                        # بیلد
 ```
 
-خروجی: `dist/ProxyFaMega-v2.1.0.zip` با ساختار `Extention/{chrome,edge,firefox}` + `Source/`.
+خروجی: `dist/ProxyFaMega-v2.2.0.zip` با ساختار `Extention/{chrome,edge,firefox}` + `Source/`.
 نیازمندی: Python 3.6+ و Node — بدون هیچ وابستگی خارجی.
 
 ### پیش‌نمایش بدون نصب (حالت دمو)
@@ -111,6 +114,9 @@ popup.html?mode=dark&lang=en
 - بکاپ‌های v2.0.x (با حساب‌های VPN) بدون خطا باز می‌شوند؛ دادهٔ VPN با یادداشت شفاف نادیده گرفته می‌شود
 
 ### سؤالات رایج
+
+**پروفایل «Firefox» (10810) چیست؟**
+یک پروفایل آمادهٔ معمولی به نشانی `127.0.0.1:10810` — همان پروفایلی که از نسخه‌های اول داشتنید و در v2.2.0 برگشت. ProxyFaMega ترافیک مرورگر را فقط به این پورت محلی می‌فرستد؛ هر برنامهٔ خارجی که SOCKS5 روی 10810 بدهد (مثلاً کلاینت دسکتاپ خودتان) تونل واقعی را برقرار می‌کند. اگر پورت برنامهٔ شما فرق دارد، در صفحهٔ پروفایل‌ها ویرایشش کنید.
 
 **ماژول VPN چی شد؟**
 نسخه‌های 2.0.x ماژول اختیاری 100riVPN (VPN داخلی فایرفاکس) داشتند. یک افزونهٔ مرورگر نمی‌تواند خودش تونل را باز کند (CONNECT با توکن Bearer در جاوااسکریپت ممنوع است)، بنابراین ماژول در v2.1.0 کامل حذف شد تا ابزار ساده و تک‌منظوره باشد. توکن‌های باقی‌مانده در اولین اجرا پاک می‌شوند؛ بکاپ‌های قدیمی سالم باز می‌شوند.
@@ -161,7 +167,9 @@ Chrome 111+، Edge (هر دو MV3) و Firefox 115+ (MV2) — با سه بیلد 
 
 **ProxyFaMega** is a browser proxy-profile manager: Persian-first, fully RTL, bilingual (Persian/English), with a compact iOS-style UI — and zero telemetry. A simpler, faster alternative to SwitchyOmega / ZeroOmega that ships ready-made profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Tor, Psiphon… and routes your browser traffic to your own local proxy client.
 
-> **v2.1.0 — final:** the optional 100riVPN module from 2.0.x was removed entirely; ProxyFaMega is now a single-purpose proxy manager. Legacy tokens are wiped on first run and old backups open cleanly (the VPN part is skipped). Details: [CHANGELOG](CHANGELOG.md)
+> **v2.2.0 — the Firefox profile is back:** the classic "Firefox" profile (SOCKS5 `127.0.0.1:10810`) returns to the ready-made list — a plain profile with no VPN module; any local client listening on port 10810 carries the browser traffic through it.
+>
+> **v2.1.0 — final VPN-free:** the optional 100riVPN module from 2.0.x was removed entirely; ProxyFaMega is now a single-purpose proxy manager. Legacy tokens are wiped on first run and old backups open cleanly (the VPN part is skipped). Details: [CHANGELOG](CHANGELOG.md)
 
 ### Gallery
 
@@ -172,7 +180,7 @@ Chrome 111+، Edge (هر دو MV3) و Firefox 115+ (MV2) — با سه بیلد 
 
 ### Features
 
-- **Profiles** — 9 ready-made profiles + unlimited custom ones (SOCKS5 / SOCKS4 / HTTP / HTTPS), connection test, right-click menu, colored status badge
+- **Profiles** — 10 ready-made profiles + unlimited custom ones (SOCKS5 / SOCKS4 / HTTP / HTTPS), connection test, right-click menu, colored status badge
 - **Auto switch** — domain / URL / regex rules with a live tester and 4 one-click presets, including "Iran direct, rest proxied"
 - **Pro backup** — AES-256-GCM encryption, automatic snapshots (up to 10), direct ZeroOmega / SwitchyOmega import, optional cross-device sync through your browser account
 - **Look & feel** — 8 color themes, light/dark/auto appearance (factory default: follow the browser theme), Vazirmatn font in 4 weights, three font sizes
@@ -190,13 +198,14 @@ Chrome 111+، Edge (هر دو MV3) و Firefox 115+ (MV2) — با سه بیلد 
 | NekoBox / Nekoray | `2080` | SOCKS5 |
 | Happ | `10808` | SOCKS5 |
 | Clash Verge / CFW | `7890` | HTTP |
+| Firefox | `10810` | SOCKS5 |
 | Shadowsocks | `1080` | SOCKS5 |
 | Tor | `9050` | SOCKS5 |
 | Psiphon | `8080` | HTTP |
 
 ### Install
 
-The single [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) package (`ProxyFaMega-v2.1.0.zip`) contains `Extention/` with three ready builds + the full `Source/`.
+The single [Releases](https://github.com/100ri-ir/ProxyFaMega/releases) package (`ProxyFaMega-v2.2.0.zip`) contains `Extention/` with three ready builds + the full `Source/`.
 
 **Chrome / Brave / Edge**
 
@@ -220,7 +229,7 @@ node test/logic_test.js && node test/background_smoke_test.js   # tests
 python3 scripts/build.py                                        # build
 ```
 
-Output: `dist/ProxyFaMega-v2.1.0.zip` with `Extention/{chrome,edge,firefox}` + `Source/`.
+Output: `dist/ProxyFaMega-v2.2.0.zip` with `Extention/{chrome,edge,firefox}` + `Source/`.
 Requirements: Python 3.6+ and Node — no external dependencies.
 
 ### Preview without installing (demo mode)
@@ -253,6 +262,9 @@ popup.html?mode=dark&lang=en
 - v2.0.x backups (carrying VPN accounts) open without errors; the VPN data is skipped with a clear note
 
 ### FAQ
+
+**What is the "Firefox" profile (10810)?**
+A plain ready-made profile pointing at `127.0.0.1:10810` — the same profile you had in the early releases, restored in v2.2.0. ProxyFaMega only forwards the browser's traffic to that local port; whatever external app serves SOCKS5 there (e.g. your own desktop client) does the actual tunneling. If your app uses a different port, just edit the profile.
 
 **What happened to the VPN module?**
 The 2.0.x releases shipped an optional 100riVPN module (Firefox's built-in VPN). A browser extension cannot open the tunnel by itself (JavaScript is not allowed to issue authenticated CONNECT requests), so the module was removed entirely in v2.1.0. Leftover tokens are wiped on first run; old backups still import cleanly.

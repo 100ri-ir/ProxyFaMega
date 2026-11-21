@@ -242,7 +242,7 @@ var i18n = (function () {
 
     /* ---------- about ---------- */
     'about.features': ['چه چیزهایی دارد؟', 'What is inside?'],
-    'about.f1': ['۹ پروفایل آماده برای Hiddify، v2rayN، NekoBox، Happ، Clash، Tor، Psiphon و…', '9 ready profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Tor, Psiphon…'],
+    'about.f1': ['۱۰ پروفایل آماده برای Hiddify، v2rayN، NekoBox، Happ، Clash، Firefox، Tor، Psiphon و…', '10 ready profiles for Hiddify, v2rayN, NekoBox, Happ, Clash, Firefox, Tor, Psiphon…'],
     'about.f2': ['سوییچ خودکار هوشمند با قوانین دامنه/آدرس/Regex و پیش‌تنظیم «ایران مستقیم»', 'Smart auto-switch with domain/URL/regex rules and the "Iran direct" preset'],
     'about.f3': ['۸ تم رنگی iPhone-سبک + حالت شب خودکار (تبعیت از تم مرورگر) + فونت وزیرمتن', '8 iPhone-style themes + auto dark mode (follows the browser theme) + Vazirmatn font'],
     'about.f4': ['بکاپ حرفه‌ای: رمزداری AES-256، اسنپ‌شات خودکار و درون‌ریزی ZeroOmega/SwitchyOmega', 'Pro backup: AES-256 encryption, auto snapshots, ZeroOmega/SwitchyOmega import'],

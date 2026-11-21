@@ -34,6 +34,11 @@ function defaultProfiles() {
       desc: { fa: 'پورت Mixed پیش‌فرض خانواده Clash — HTTP و SOCKS5', en: 'Clash family default mixed port' },
     },
     {
+      id: 'firefox', name: 'Firefox Proxy', protocol: 'socks5', host: '127.0.0.1', port: 10810,
+      color: 'g3', icon: '🦊', builtIn: true,
+      desc: { fa: 'پورت 10810 — پروفایل همیشگی Firefox؛ هر برنامه‌ای که SOCKS5 محلی روی این پورت بدهد، مرورگر از آن عبور می‌کند', en: 'Port 10810 — the classic Firefox profile; any local SOCKS5 client listening here carries the browser traffic' },
+    },
+    {
       id: 'shadowsocks', name: 'Shadowsocks', protocol: 'socks5', host: '127.0.0.1', port: 1080,
       color: 'g12', icon: '👻', builtIn: true,
       desc: { fa: 'پورت SOCKS5 کلاسیک و قدیمی Shadowsocks', en: 'Classic Shadowsocks SOCKS5 port' },
